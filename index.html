@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0d0f" />
+    <meta name="application-name" content="2026_8月合輯" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description" content="2026_8月合輯：把八個工程作品收束成一條可驗證、可治理、可學習的工業智慧決策鏈。" />
+    <meta property="og:title" content="2026_8月合輯" />
+    <meta property="og:description" content="八種工程能力，一條可信決策鏈。" />
+    <meta property="og:image" content="./og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="2026_8月合輯" />
+    <meta name="twitter:description" content="八種工程能力，一條可信決策鏈。" />
+    <meta name="twitter:image" content="./og.png" />
+    <title>2026_8月合輯 · Intelligence Atlas</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon-192.png" sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳至主要內容</a>
+    <div class="noise" aria-hidden="true"></div>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="主導覽">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"><span>八</span></div>
+          <div>
+            <strong>2026_8月合輯</strong>
+            <small>2026 · AUGUST / 08</small>
+          </div>
+        </div>
+
+        <nav class="main-nav">
+          <button class="nav-item is-active" data-view="overview" aria-label="營運總覽" aria-current="page">
+            <span class="nav-icon">⌂</span><span>總覽</span><small>01</small>
+          </button>
+          <button class="nav-item" data-view="line" aria-label="場域分身">
+            <span class="nav-icon">⌁</span><span>場域分身</span><small>02</small>
+          </button>
+          <button class="nav-item" data-view="incident" aria-label="事件中心">
+            <span class="nav-icon">⌬</span><span>事件中心</span><small>03</small>
+          </button>
+          <button class="nav-item" data-view="decisions" aria-label="決策實驗室">
+            <span class="nav-icon">↗</span><span>決策實驗室</span><small>04</small>
+          </button>
+          <button class="nav-item" data-view="evidence" aria-label="證據中樞">
+            <span class="nav-icon">◈</span><span>證據中樞</span><small>05</small>
+          </button>
+          <button class="nav-item" data-view="collection" aria-label="作品圖譜">
+            <span class="nav-icon">▦</span><span>作品圖譜</span><small>06</small>
+          </button>
+        </nav>
+
+        <div class="sidebar-spacer"></div>
+
+        <div class="system-card">
+          <div class="system-card-head">
+            <span class="live-dot"></span>
+            <span>整合系統在線</span>
+          </div>
+          <strong>8 / 8</strong>
+          <p>所有模組已接入展示資料流</p>
+          <div class="module-dots" aria-label="八個模組皆正常">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+
+        <button class="profile-chip" id="openAbout" aria-label="關於這個作品">
+          <span class="profile-monogram">AW</span>
+          <span><b>Offline demo</b><small>可重現 · 零外部 API</small></span>
+          <span>···</span>
+        </button>
+      </aside>
+
+      <main id="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="viewEyebrow">AUGUST INTELLIGENCE ATLAS</p>
+            <h1 id="viewTitle">營運總覽</h1>
+          </div>
+          <div class="top-actions">
+            <button class="lens-button" id="openLens" aria-label="切換觀看視角"><i></i><span><small>VIEW LENS</small><b id="activeLensLabel">策略視角</b></span></button>
+            <button class="tour-button" id="openTour" aria-label="開啟六章作品導覽"><span>06</span><b>作品導覽</b></button>
+            <button class="command-button" id="openCommand"><span>⌕</span><b>快速操作</b><kbd>Ctrl K</kbd></button>
+            <div class="clock" aria-label="目前模擬時間">
+              <span class="live-dot"></span>
+              <span id="clock">08:26:40</span>
+              <small>TPE</small>
+            </div>
+            <button class="icon-button" id="openAudit" aria-label="開啟稽核紀錄">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6zM9 7h6M9 11h6M9 15h4"/></svg>
+              <span class="notification-dot" aria-hidden="true"></span>
+            </button>
+          </div>
+        </header>
+
+        <section class="view is-active" id="view-overview" data-view-panel="overview">
+          <div class="hero-panel">
+            <div class="hero-copy">
+              <p class="kicker" id="heroKicker"><span></span> 2026 PORTFOLIO / VALUE LENS</p>
+              <h2 id="heroTitle">八種工程能力，<br /><em>一條可驗證的成果鏈。</em></h2>
+              <p class="hero-lead" id="heroLead">把感知、安全、品質、預測與 AI 治理收束成一套可衡量、可批准、也能持續學習的營運系統。</p>
+              <div class="hero-actions">
+                <button class="button button-primary" id="runStory">
+                  <span class="play-icon">▶</span>啟動整線演練
+                </button>
+                <button class="button button-ghost" data-jump="collection">探索八個模組 <span>↗</span></button>
+                <button class="button button-ghost" id="exportPortfolio">下載作品說明書 <span>↓</span></button>
+              </div>
+              <div class="hero-proof" id="heroProof">
+                <span><b>8</b> 個整合模組</span>
+                <span><b>240</b> 個決策候選</span>
+                <span><b>100%</b> 證據可回溯</span>
+              </div>
+            </div>
+
+            <div class="atlas" aria-label="八個模組的整合圖">
+              <div class="atlas-grid" aria-hidden="true"></div>
+              <div class="orbit orbit-one" aria-hidden="true"></div>
+              <div class="orbit orbit-two" aria-hidden="true"></div>
+              <div class="atlas-core">
+                <span>08</span>
+                <small>UNIFIED<br />CORE</small>
+              </div>
+              <button class="atlas-node node-edge" data-module="edge"><i>01</i><b>EDGE</b><small>1 kHz 感測</small></button>
+              <button class="atlas-node node-aoi" data-module="aoi"><i>02</i><b>VISION</b><small>品質判定</small></button>
+              <button class="atlas-node node-etl" data-module="etl"><i>03</i><b>DATA</b><small>品質與血緣</small></button>
+              <button class="atlas-node node-rag" data-module="rag"><i>04</i><b>RAG</b><small>證據查核</small></button>
+              <button class="atlas-node node-plan" data-module="forecast"><i>05</i><b>PLAN</b><small>情境預測</small></button>
+              <button class="atlas-node node-risk" data-module="finance"><i>06</i><b>RISK</b><small>風險模型</small></button>
+              <button class="atlas-node node-eda" data-module="eda"><i>07</i><b>EDA</b><small>設計驗證</small></button>
+              <button class="atlas-node node-ai" data-module="aiops"><i>08</i><b>AI OPS</b><small>模型治理</small></button>
+              <div class="data-packet" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <div class="stat-grid">
+            <article class="stat-card">
+              <div class="stat-head"><span>決策信心</span><span class="trend-up">↗ 2.4%</span></div>
+              <div class="stat-value">92.4<small>%</small></div>
+              <div class="meter"><i style="width: 92.4%"></i></div>
+              <p>引用、模型與資料品質綜合評分</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-head"><span>端到端延遲</span><span class="tag tag-cyan">P95</span></div>
+              <div class="stat-value">42<small>ms</small></div>
+              <svg class="sparkline" viewBox="0 0 180 34" preserveAspectRatio="none" aria-hidden="true"><path d="M0 27 C18 24 23 12 41 18 S69 30 85 19 109 7 128 14 151 27 180 9"/><path class="spark-fill" d="M0 27 C18 24 23 12 41 18 S69 30 85 19 109 7 128 14 151 27 180 9 V34 H0Z"/></svg>
+              <p>感測、判定、查證與寫入稽核</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-head"><span>資料品質</span><span class="trend-up">全數通過</span></div>
+              <div class="stat-value">99.7<small>%</small></div>
+              <div class="quality-blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <p>Schema、重複值、缺漏與雜湊檢查</p>
+            </article>
+            <article class="stat-card status-card" id="overviewStatusCard">
+              <div class="stat-head"><span>產線狀態</span><span class="live-dot"></span></div>
+              <div class="status-lockup"><i>✓</i><div><strong id="overviewStatus">NORMAL</strong><small id="overviewStatusReason">安全訊號皆在允收帶內</small></div></div>
+              <div class="status-meta"><span>Motor <b id="motorState">ON</b></span><span>PWM <b id="pwmState">100%</b></span></div>
+            </article>
+          </div>
+
+          <article class="panel outcome-ledger-panel">
+            <div class="panel-heading">
+              <div><p class="kicker">OUTCOME LEDGER / PROOF MAP</p><h3>成果不是口號，每一項都能回到證據</h3></div>
+              <span class="tag tag-cyan" id="ledgerLensTag">STRATEGY LENS</span>
+            </div>
+            <div class="outcome-ledger-body">
+              <div class="lens-brief">
+                <span id="lensBriefIndex">01 / STRATEGY</span>
+                <h4 id="lensBriefTitle">從八個作品，看見一套完整的營運能力</h4>
+                <p id="lensBriefCopy">重點不是功能數量，而是每個模組如何降低停機、品質、交期與 AI 風險，並在同一條決策鏈上留下證據。</p>
+                <div class="lens-route"><small>RECOMMENDED ROUTE</small><b id="lensRoute">總覽 → 事件中心 → 決策實驗室 → 證據中樞</b></div>
+                <button class="text-button" id="openLensFromLedger">切換觀看視角 ↗</button>
+              </div>
+              <div class="ledger-list">
+                <button class="ledger-row is-emphasized" data-ledger-key="resilience" data-ledger-jump="incident"><span><i>01</i><b>營運韌性</b><small>異常在同一控制週期安全收斂</small></span><strong>24.7<em>s</em></strong><mark>TRACE-0421 ↗</mark></button>
+                <button class="ledger-row" data-ledger-key="quality" data-ledger-jump="line"><span><i>02</i><b>品質可解釋</b><small>AI、規則、尺度與人工複核共存</small></span><strong>97.1<em>%</em></strong><mark>AOI EVIDENCE ↗</mark></button>
+                <button class="ledger-row is-emphasized" data-ledger-key="decision" data-ledger-jump="decisions"><span><i>03</i><b>決策空間</b><small>保留時間、風險、服務與能源取捨</small></span><strong>240<em>案</em></strong><mark>PARETO FRONT ↗</mark></button>
+                <button class="ledger-row" data-ledger-key="learning" data-ledger-jump="evidence"><span><i>04</i><b>學習閉環</b><small>事件規則進入下一版 AI 評測</small></span><strong>25<em>題</em></strong><mark>GOLDEN SET ↗</mark></button>
+              </div>
+            </div>
+          </article>
+
+          <div class="overview-lower">
+            <article class="panel pipeline-panel">
+              <div class="panel-heading">
+                <div><p class="kicker">ONE TRACE · FIVE MOMENTS</p><h3>一條事件，穿越整個系統</h3></div>
+                <span class="trace-id">TRACE / AUG-0826-0421</span>
+              </div>
+              <div class="pipeline" id="pipeline">
+                <div class="pipeline-line"><i id="pipelineProgress"></i></div>
+                <div class="pipeline-step" data-pipeline-step="0"><span>01</span><b>感測</b><small>EDGE</small></div>
+                <div class="pipeline-step" data-pipeline-step="1"><span>02</span><b>防護</b><small>SAFE</small></div>
+                <div class="pipeline-step" data-pipeline-step="2"><span>03</span><b>複檢</b><small>VISION</small></div>
+                <div class="pipeline-step" data-pipeline-step="3"><span>04</span><b>查證</b><small>RAG</small></div>
+                <div class="pipeline-step" data-pipeline-step="4"><span>05</span><b>決策</b><small>PLAN</small></div>
+              </div>
+              <div class="story-result" id="storyResult">
+                <span class="story-icon">↳</span>
+                <div><b>等待演練</b><p>按下「啟動整線演練」，觀看事件如何被攔截、查證並轉化為決策。</p></div>
+              </div>
+            </article>
+
+            <article class="panel activity-panel">
+              <div class="panel-heading"><div><p class="kicker">LIVE AUDIT</p><h3>即時稽核</h3></div><button class="text-button" id="clearAudit">清除</button></div>
+              <div class="activity-list" id="activityList" aria-live="polite">
+                <div class="activity-item"><i class="activity-dot good"></i><time>08:26:40</time><div><b>資料品質檢查完成</b><small>8 個來源 · 0 個阻擋項目</small></div></div>
+                <div class="activity-item"><i class="activity-dot cyan"></i><time>08:26:18</time><div><b>預測情境 v12 已發布</b><small>planner@local · SHA 7c9a…4d2</small></div></div>
+                <div class="activity-item"><i class="activity-dot amber"></i><time>08:25:56</time><div><b>邊界樣本等待複核</b><small>LOT-A0826 · frame 0421</small></div></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="view-line" data-view-panel="line" hidden>
+          <div class="section-intro">
+            <div><p class="kicker"><span></span> LIVE DIGITAL TWIN</p><h2>一座會說話的工廠。</h2><p>把幾何位置、設備關係、即時感測與品質狀態放進同一個營運語境。</p></div>
+            <div class="section-badge"><span>LINE 03</span><b>SIMULATION</b><small>1,000 Hz · deterministic seed</small></div>
+          </div>
+
+          <article class="panel twin-panel">
+            <div class="panel-heading twin-heading">
+              <div><p class="kicker">SITE / LINE 03 / LIVE</p><h3>生產場域數位分身</h3></div>
+              <div class="twin-kpis"><span><small>OEE</small><b>86.4%</b></span><span><small>THROUGHPUT</small><b>42.8 <i>u/h</i></b></span><span><small>ENERGY</small><b>18.6 <i>kW</i></b></span></div>
+              <div class="segmented twin-mode" role="group" aria-label="數位分身顯示模式"><button class="is-active" data-twin-mode="health">健康</button><button data-twin-mode="flow">流量</button><button data-twin-mode="energy">能耗</button></div>
+            </div>
+            <div class="twin-body">
+              <div class="factory-map" id="factoryMap" data-mode="health">
+                <div class="factory-grid" aria-hidden="true"></div>
+                <div class="flow-rail rail-one"><i></i><i></i><i></i><i></i></div>
+                <div class="flow-rail rail-two"><i></i><i></i><i></i></div>
+                <button class="station station-inbound" data-station="inbound"><span>ST-01</span><b>原料進站</b><small>QUEUE 08</small><i class="station-state"></i></button>
+                <button class="station station-robot" data-station="robot"><span>RB-02</span><b>取放機械臂</b><small>CYCLE 1.8s</small><i class="station-state"></i></button>
+                <button class="station station-aoi is-selected" data-station="aoi"><span>VI-03</span><b>視覺檢測</b><small>REVIEW 02</small><i class="station-state warn"></i></button>
+                <button class="station station-buffer" data-station="buffer"><span>BF-04</span><b>品質緩衝</b><small>WIP 12</small><i class="station-state"></i></button>
+                <button class="station station-pack" data-station="pack"><span>PK-05</span><b>包裝出站</b><small>RATE 96%</small><i class="station-state"></i></button>
+                <div class="map-legend"><span><i class="good"></i>正常</span><span><i class="amber"></i>注意</span><span><i class="flow"></i>工件流向</span></div>
+                <div class="map-scale">10 m <i></i></div>
+              </div>
+              <aside class="station-inspector" id="stationInspector">
+                <div class="station-inspector-head"><span>SELECTED ASSET</span><em>LIVE</em></div>
+                <h4>VI-03 · 視覺檢測站</h4>
+                <p>Surface AOI Inspector 正在使用配方 <b>precision-metal-v4</b>。</p>
+                <div class="station-stats"><span><small>HEALTH</small><b>92</b></span><span><small>UTIL.</small><b>78%</b></span><span><small>LAST CYCLE</small><b>9.8ms</b></span></div>
+                <div class="station-signals"><div><span>Camera link</span><b>ONLINE</b></div><div><span>Recipe hash</span><b>4f8a…c21</b></div><div><span>Open tasks</span><b class="amber-text">02</b></div></div>
+                <button class="button button-ghost" id="inspectSelected">開啟設備上下文 <span>↗</span></button>
+              </aside>
+            </div>
+          </article>
+
+          <div class="line-layout">
+            <article class="panel inspection-panel">
+              <div class="panel-heading">
+                <div><p class="kicker">VISUAL AOI</p><h3>表面瑕疵複檢</h3></div>
+                <div class="segmented" role="group" aria-label="選擇檢測樣本">
+                  <button data-sample="normal">正常</button><button class="is-active" data-sample="micro-crack">微裂紋</button><button data-sample="contamination">污染</button>
+                </div>
+              </div>
+              <div class="inspection-stage" id="inspectionStage" data-sample="micro-crack">
+                <canvas id="inspectionCanvas" width="900" height="460" aria-label="金屬表面檢測影像"></canvas>
+                <div class="scan-line" aria-hidden="true"></div>
+                <div class="roi-label">ROI / 72%</div>
+                <div class="defect-box defect-one"><span>01</span></div>
+                <div class="defect-box defect-two"><span>02</span></div>
+                <div class="image-hud"><span>CAM / LINE-03</span><span>1280 × 720</span><span>12.5 μm/px</span></div>
+              </div>
+              <div class="inspection-result">
+                <div class="verdict review" id="inspectionVerdict"><span>AI + RULE</span><strong>REVIEW</strong></div>
+                <div class="inspection-metrics">
+                  <span><small>瑕疵數</small><b id="defectCount">2</b></span>
+                  <span><small>面積</small><b id="defectArea">1.84 <i>mm²</i></b></span>
+                  <span><small>信心</small><b id="inspectionConfidence">91.6%</b></span>
+                  <span><small>延遲</small><b id="inspectionLatency">9.8 <i>ms</i></b></span>
+                </div>
+                <p id="inspectionReason">AI 與規則在邊界區域出現分歧</p>
+              </div>
+            </article>
+
+            <div class="line-side">
+              <article class="panel telemetry-panel">
+                <div class="panel-heading"><div><p class="kicker">REAL-TIME EDGE</p><h3>即時遙測</h3></div><span class="tag tag-good" id="safetyTag">NORMAL</span></div>
+                <div class="telemetry-chart">
+                  <div class="chart-y"><span>48N</span><span>24N</span><span>0N</span></div>
+                  <svg id="telemetrySvg" viewBox="0 0 620 190" preserveAspectRatio="none" aria-label="力量與震動即時圖">
+                    <defs><linearGradient id="telemetryFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb24c" stop-opacity=".25"/><stop offset="1" stop-color="#ffb24c" stop-opacity="0"/></linearGradient></defs>
+                    <g class="grid-lines"><path d="M0 20H620M0 95H620M0 170H620"/></g>
+                    <path id="telemetryArea" class="telemetry-area" d="" />
+                    <path id="forceLine" class="force-line" d="" />
+                    <path id="vibrationLine" class="vibration-line" d="" />
+                  </svg>
+                  <div class="chart-legend"><span><i class="amber"></i>力量</span><span><i class="cyan"></i>震動</span><b id="telemetryNow">14.2 N</b></div>
+                </div>
+                <div class="safety-state" id="safetyStateCard">
+                  <div class="safety-glyph">✓</div>
+                  <div><small>SAFETY STATE</small><strong id="safetyState">NORMAL</strong><p id="safetyReason">所有訊號均在安全範圍</p></div>
+                  <div class="safety-output"><span>MOTOR <b id="lineMotor">ON</b></span><span>PWM <b id="linePwm">100%</b></span></div>
+                </div>
+                <div class="fault-controls">
+                  <button data-fault="force">注入力量突波</button>
+                  <button data-fault="heartbeat">模擬心跳遺失</button>
+                  <button class="reset" data-fault="reset">復歸</button>
+                </div>
+              </article>
+
+              <article class="panel data-gate-panel">
+                <div class="panel-heading"><div><p class="kicker">DATA GATE</p><h3>進站品質閘門</h3></div><b class="quality-score">99.7</b></div>
+                <div class="gate-flow">
+                  <div><span>01</span><b>Schema</b><small>24 / 24 欄位</small><i>✓</i></div>
+                  <div><span>02</span><b>完整性</b><small>12,840 筆</small><i>✓</i></div>
+                  <div><span>03</span><b>去重</b><small>7 筆已合併</small><i>✓</i></div>
+                  <div><span>04</span><b>寫入</b><small>SHA 已封存</small><i>✓</i></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="view-incident" data-view-panel="incident" hidden>
+          <div class="incident-header">
+            <div class="incident-title-block">
+              <p class="kicker"><span></span> CROSS-SIGNAL INVESTIGATION</p>
+              <div class="incident-title-row"><span class="severity-badge">P1</span><h2>力量突波造成品質邊界事件</h2></div>
+              <p>INC-0826-0421 · LINE 03 · 自動建立於 08:26:41</p>
+            </div>
+            <div class="incident-actions">
+              <div class="incident-status"><span class="live-dot"></span><div><small>STATUS</small><b id="incidentStatus">等待決策</b></div></div>
+              <button class="button button-ghost" id="exportBrief">匯出事件摘要 ↓</button>
+              <button class="button button-primary" id="stageRecovery">暫存復原方案</button>
+            </div>
+          </div>
+
+          <div class="incident-layout">
+            <article class="panel replay-panel">
+              <div class="panel-heading"><div><p class="kicker">EVENT REPLAY</p><h3>事件時間軸</h3></div><span class="trace-id">08:26:40.118 → 08:27:04.882</span></div>
+              <div class="replay-summary"><span><small>IMPACT WINDOW</small><b>24.7 s</b></span><span><small>CORRELATED SIGNALS</small><b>05</b></span><span><small>ROOT CAUSE CONF.</small><b class="cyan-text">94%</b></span></div>
+              <div class="replay-track" id="replayTrack">
+                <div class="replay-line"><i id="replayProgress"></i></div>
+                <button class="replay-event is-active" data-replay="0" style="--pos:0%"><i></i><time>40.118</time><b>力量升高</b><small>EDGE · 28.4 N</small></button>
+                <button class="replay-event" data-replay="1" style="--pos:22%"><i></i><time>40.121</time><b>安全停機</b><small>SAFE · PWM 0%</small></button>
+                <button class="replay-event" data-replay="2" style="--pos:47%"><i></i><time>42.806</time><b>AOI 分歧</b><small>VISION · REVIEW</small></button>
+                <button class="replay-event" data-replay="3" style="--pos:72%"><i></i><time>51.284</time><b>證據完成</b><small>RAG · 2 sources</small></button>
+                <button class="replay-event" data-replay="4" style="--pos:100%"><i></i><time>04.882</time><b>影響重算</b><small>PLAN · +1.8%</small></button>
+              </div>
+              <div class="replay-scrubber"><button id="playReplay"><span>▶</span>重播</button><input id="replayInput" aria-label="事件重播時間" type="range" min="0" max="4" step="1" value="0" /><output id="replayTime">08:26:40.118</output></div>
+              <div class="correlation-board">
+                <div class="correlation-row"><span><i class="amber"></i>力量</span><svg viewBox="0 0 700 54" preserveAspectRatio="none"><path class="signal-base" d="M0 40H700"/><path class="signal-force" d="M0 39 L130 38 170 34 205 8 224 39 420 40 700 39"/></svg><b>42.8 N</b></div>
+                <div class="correlation-row"><span><i class="red"></i>安全</span><svg viewBox="0 0 700 54" preserveAspectRatio="none"><path class="signal-base" d="M0 40H700"/><path class="signal-step" d="M0 15 H208 V40 H700"/></svg><b>STOP</b></div>
+                <div class="correlation-row"><span><i class="cyan"></i>AOI</span><svg viewBox="0 0 700 54" preserveAspectRatio="none"><path class="signal-base" d="M0 40H700"/><path class="signal-aoi" d="M0 38 H320 Q342 38 352 14 T385 38 H700"/></svg><b>1.84 mm²</b></div>
+                <div class="correlation-cursor" id="correlationCursor"></div>
+              </div>
+              <div class="replay-finding" id="replayFinding"><span>01</span><div><small>OBSERVATION</small><b>力量值在 3 ms 內由 28.4 N 升至 42.8 N</b><p>同一序號的 IMU 與編碼器資料保持有效，可排除整體通訊中斷。</p></div></div>
+            </article>
+
+            <aside class="incident-side">
+              <article class="panel hypothesis-panel">
+                <div class="panel-heading"><div><p class="kicker">ROOT CAUSE</p><h3>調查假設</h3></div><span class="tag tag-good">94% CONF.</span></div>
+                <div class="root-cause"><span>LIKELY</span><h4>進料偏移造成治具瞬間受力</h4><p>力量突波與 AOI 邊界瑕疵在同一工件、同一 Trace 發生；相機與模型健康度正常。</p></div>
+                <div class="hypothesis-list"><div><i style="--conf:94%"></i><span><b>治具／進料偏移</b><small>94%</small></span></div><div><i style="--conf:31%"></i><span><b>相機曝光異常</b><small>31%</small></span></div><div><i style="--conf:12%"></i><span><b>模型版本退化</b><small>12%</small></span></div></div>
+                <button class="text-button" data-jump="evidence">檢視完整證據與來源 ↗</button>
+              </article>
+
+              <article class="panel recovery-panel">
+                <div class="panel-heading"><div><p class="kicker">RECOVERY OPTIONS</p><h3>復原方案</h3></div><span id="selectedPlanBadge" class="tag tag-cyan">PLAN B</span></div>
+                <div class="plan-options" role="radiogroup" aria-label="選擇復原方案">
+                  <button role="radio" aria-checked="false" data-plan="A"><span>A</span><div><b>立即全線復歸</b><small>最快 · 複發風險較高</small></div><em>6 min</em></button>
+                  <button class="is-selected" role="radio" aria-checked="true" data-plan="B"><span>B</span><div><b>校正治具後降速復歸</b><small>建議 · 風險與交期平衡</small></div><em>18 min</em></button>
+                  <button role="radio" aria-checked="false" data-plan="C"><span>C</span><div><b>隔離批次並全面複檢</b><small>最保守 · 延遲最高</small></div><em>46 min</em></button>
+                </div>
+                <div class="plan-impact"><span><small>交期影響</small><b id="planDelay">+1.8%</b></span><span><small>複發風險</small><b id="planRisk">LOW</b></span><span><small>待複檢</small><b id="planReview">12</b></span></div>
+              </article>
+            </aside>
+          </div>
+
+          <article class="panel action-inbox-panel">
+            <div class="panel-heading"><div><p class="kicker">FRONTLINE ACTION INBOX</p><h3>前線任務收件匣</h3></div><div class="inbox-meta"><span><i></i>3 OPEN</span><button class="text-button" id="completeAllTasks">完成可執行項目</button></div></div>
+            <div class="action-table" role="table" aria-label="前線任務">
+              <div class="action-row action-head"><span>任務</span><span>關聯資產</span><span>負責角色</span><span>期限</span><span>證據</span><span>狀態</span><span></span></div>
+              <div class="action-row" data-task="fixture"><span><i class="task-priority high">P1</i><b>檢查並重新定位進料治具</b></span><span>RB-02 / FIX-7A</span><span>設備工程</span><span>12 分鐘</span><span><em>4 items</em></span><span><mark>進行中</mark></span><span><button class="task-action">完成</button></span></div>
+              <div class="action-row" data-task="review"><span><i class="task-priority mid">P2</i><b>人工複核 12 件邊界樣本</b></span><span>VI-03 / LOT-A0826</span><span>品質工程</span><span>25 分鐘</span><span><em>12 frames</em></span><span><mark>待處理</mark></span><span><button class="task-action">開始</button></span></div>
+              <div class="action-row" data-task="plan"><span><i class="task-priority low">P3</i><b>發布降速復歸後的排程情境</b></span><span>PLAN / v13</span><span>生產規劃</span><span>45 分鐘</span><span><em>1 scenario</em></span><span><mark>待批准</mark></span><span><button class="task-action">檢視</button></span></div>
+            </div>
+          </article>
+
+          <article class="panel handoff-panel">
+            <div class="panel-heading">
+              <div><p class="kicker">SHIFT HANDOFF / OPERATIONAL MEMORY</p><h3>把一次處置，變成下一班的起點</h3></div>
+              <div class="handoff-actions"><span class="tag tag-amber" id="handoffTag">DRAFT</span><button class="button button-ghost" id="generateHandoff">生成交班記憶</button></div>
+            </div>
+            <div class="handoff-grid">
+              <div class="handoff-summary">
+                <div class="handoff-id"><span>MEMORY OBJECT</span><b id="handoffId">等待產生</b><small>來源將綁定 TRACE / DECISION / TASK</small></div>
+                <p id="handoffSummary">系統會把事件摘要、未解風險、任務進度與下一位負責人整理成可接手的交班物件。</p>
+                <div class="handoff-facts">
+                  <span><small>未解風險</small><b id="handoffRisk">—</b></span>
+                  <span><small>任務進度</small><b id="handoffProgress">—</b></span>
+                  <span><small>下一位負責人</small><b id="handoffOwner">—</b></span>
+                </div>
+              </div>
+              <div class="learning-card">
+                <div><span>LEARNED RULE</span><b>從 Trace 萃取可重用規則</b></div>
+                <blockquote id="learnedRule">「產生交班記憶後，這裡會顯示可供下一次事件使用的判斷規則。」</blockquote>
+                <button class="text-button" id="captureGoldenCase" disabled>收錄為第 25 題黃金案例 ↗</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel postmortem-panel">
+            <div class="panel-heading">
+              <div><p class="kicker">BLAMELESS RETROSPECTIVE / SYSTEM LEARNING</p><h3>讓事故結束，也讓同類事故更難再發生</h3></div>
+              <div class="postmortem-actions"><span class="tag tag-amber" id="postmortemTag" role="status" aria-live="polite">DRAFT</span><button class="button button-ghost" id="generatePostmortem">生成無責復盤</button><button class="text-button" id="exportPostmortem" disabled>下載復盤 ↗</button></div>
+            </div>
+            <div class="postmortem-lead">
+              <div><span>POSTMORTEM OBJECT</span><b id="postmortemId">等待產生</b><small id="postmortemTrace">將綁定 INCIDENT / TRACE / DECISION / ACTION</small></div>
+              <p id="postmortemSummary">復盤會記錄影響、偵測、緩解、系統促成因素、有效防護與後續行動；重點是改善系統，不評價個人。</p>
+            </div>
+            <div class="postmortem-impact">
+              <span><small>預計復原</small><b id="postmortemDuration">—</b></span>
+              <span><small>品質範圍</small><b id="postmortemQuality">—</b></span>
+              <span><small>交期影响</small><b id="postmortemDelivery">—</b></span>
+            </div>
+            <div class="postmortem-grid">
+              <section><div class="mini-heading"><span>01</span><b>偵測與緩解</b></div><p id="postmortemDetection">等待事件資料。</p><p id="postmortemMitigation">等待決策與批准資料。</p></section>
+              <section><div class="mini-heading"><span>02</span><b>系統促成因素</b></div><ul id="postmortemFactors"><li>等待產生復盤。</li></ul></section>
+              <section><div class="mini-heading"><span>03</span><b>有效防護</b></div><ul id="postmortemWorked"><li>等待產生復盤。</li></ul></section>
+            </div>
+            <div class="postmortem-followup">
+              <div class="mini-heading"><span>04</span><b>有負責人、有期限、有證據的後續行動</b></div>
+              <div class="postmortem-action-list" id="postmortemActionList"><p>完成或批准前線任務後重新產生復盤，行動狀態會同步更新。</p></div>
+              <div class="success-metric"><span>RECURRENCE GUARD</span><p id="postmortemSuccess">連續班次、證據完整率與復發條件會在這裡成為可核驗成功指標。</p></div>
+            </div>
+          </article>
+
+          <div class="decision-drawer" id="decisionDrawer" role="dialog" aria-modal="true" aria-labelledby="decisionDrawerTitle" aria-hidden="true">
+            <div class="decision-drawer-head"><div><p class="kicker">GOVERNED ACTION</p><h3 id="decisionDrawerTitle">批准復原方案</h3></div><button id="closeDecision" aria-label="關閉">×</button></div>
+            <div class="decision-object"><span>DECISION OBJECT</span><b id="decisionPlanTitle">PLAN B · 校正治具後降速復歸</b><small>將寫入 TRACE / AUG-0826-0421</small></div>
+            <label>決策理由<textarea id="decisionReason" rows="3">已核對安全狀態、AOI 邊界樣本與 SOP；採用風險與交期平衡方案。</textarea></label>
+            <div class="decision-checks"><span><i>✓</i> 執行人員具備 approver 權限</span><span><i>✓</i> 所有必要證據已附加</span><span><i>✓</i> 復原條件與回滾規則已定義</span></div>
+            <div class="decision-drawer-actions"><button class="button button-ghost" id="cancelDecision">取消</button><button class="button button-primary" id="approveDecision">批准並寫入稽核</button></div>
+          </div>
+        </section>
+
+        <section class="view" id="view-decisions" data-view-panel="decisions" hidden>
+          <div class="section-intro">
+            <div><p class="kicker"><span></span> MODELS WITH BOUNDARIES</p><h2>把不確定性，變成可調整的選項。</h2><p>同時觀察需求、投資風險與硬體設計餘裕，不把模型輸出偽裝成確定答案。</p></div>
+            <button class="button button-ghost" id="resetDecisions">重設所有情境 ↺</button>
+          </div>
+
+          <div class="decision-grid">
+            <article class="panel forecast-panel">
+              <div class="panel-heading">
+                <div><p class="kicker">DEMAND PLANNING</p><h3>14 日需求情境</h3></div>
+                <div class="forecast-summary"><small>情境總量</small><b id="forecastTotal">3,221</b><span id="forecastDelta">+0.0%</span></div>
+              </div>
+              <div class="scenario-presets" role="group" aria-label="快速套用需求情境">
+                <button class="is-active" data-scenario="baseline"><span>BASE</span><b>基準計畫</b><small>目前發布版本</small></button>
+                <button data-scenario="campaign"><span>S-01</span><b>九月促銷</b><small>促銷 +18% · 產能 310</small></button>
+                <button data-scenario="recovery"><span>S-02</span><b>停機復原</b><small>產能 230 · 緩升</small></button>
+              </div>
+              <div class="forecast-chart-wrap">
+                <div class="chart-y forecast-y"><span>330</span><span>220</span><span>110</span><span>0</span></div>
+                <svg id="forecastSvg" viewBox="0 0 760 290" preserveAspectRatio="none" aria-label="需求預測與預測區間">
+                  <defs>
+                    <linearGradient id="forecastBand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5bd6d0" stop-opacity=".22"/><stop offset="1" stop-color="#5bd6d0" stop-opacity=".03"/></linearGradient>
+                  </defs>
+                  <g class="grid-lines forecast-grid"><path d="M0 18H760M0 103H760M0 188H760M0 273H760"/></g>
+                  <path id="forecastBandPath" class="forecast-band" d="" />
+                  <path id="baselinePath" class="baseline-line" d="" />
+                  <path id="scenarioPath" class="scenario-line" d="" />
+                  <g id="scenarioDots"></g>
+                </svg>
+                <div class="chart-x"><span>8/27</span><span>8/30</span><span>9/02</span><span>9/05</span><span>9/09</span></div>
+                <div class="chart-legend"><span><i class="muted"></i>基準</span><span><i class="cyan"></i>目前情境</span><span class="band-key">90% 預測區間</span></div>
+              </div>
+              <div class="scenario-controls">
+                <label><span><b>促銷強度</b><output id="promoOutput">+0%</output></span><input id="promoInput" type="range" min="0" max="30" value="0" /></label>
+                <label><span><b>售價調整</b><output id="priceOutput">+0%</output></span><input id="priceInput" type="range" min="-10" max="15" value="0" /></label>
+                <label><span><b>每日產能</b><output id="capacityOutput">330</output></span><input id="capacityInput" type="range" min="190" max="360" value="330" /></label>
+              </div>
+              <div class="forecast-note"><i>i</i><span id="forecastNote">目前情境未觸發產能限制；預測為規劃輔助，不代表因果效果。</span></div>
+            </article>
+
+            <article class="panel risk-panel">
+              <div class="panel-heading"><div><p class="kicker">PORTFOLIO ML</p><h3>壓力情境</h3></div><span class="tag tag-amber">MONITOR</span></div>
+              <div class="risk-visual">
+                <div class="risk-ring" id="riskRing" style="--risk: 51"><div><span id="riskScore">51</span><small>RISK<br />SCORE</small></div></div>
+                <div class="risk-metrics"><span><small>95% VaR</small><b id="var95">3.19%</b></span><span><small>預估回撤</small><b id="drawdown">8.2%</b></span></div>
+              </div>
+              <label class="single-range"><span><b>市場壓力</b><output id="stressOutput">35</output></span><input id="stressInput" type="range" min="0" max="100" value="35" /></label>
+              <div class="recommendation"><small>NEXT BEST ACTION</small><p id="riskAction">維持配置，持續監測漂移</p></div>
+            </article>
+
+            <article class="panel eda-panel">
+              <div class="panel-heading"><div><p class="kicker">SIMOPS / EDA</p><h3>電源完整性餘裕</h3></div><span class="tag tag-good" id="edaTag">STABLE</span></div>
+              <div class="eda-board" aria-hidden="true">
+                <div class="chip"><span>A17</span></div><i class="trace t1"></i><i class="trace t2"></i><i class="trace t3"></i><i class="trace t4"></i>
+                <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><span class="node n4"></span>
+                <div class="heat" id="edaHeat"></div>
+              </div>
+              <div class="eda-metrics"><span><small>RAIL</small><b id="edaVoltage">1.001 V</b></span><span><small>JUNCTION</small><b id="edaTemperature">64.1 °C</b></span><span><small>MARGIN</small><b id="edaMargin">92%</b></span></div>
+              <label class="single-range"><span><b>運算負載</b><output id="loadOutput">62%</output></span><input id="loadInput" type="range" min="20" max="100" value="62" /></label>
+              <div class="recommendation compact"><small>SIMULATION VERDICT</small><p id="edaVerdict">設計穩定</p></div>
+            </article>
+          </div>
+
+          <article class="panel optimizer-panel">
+            <div class="panel-heading">
+              <div><p class="kicker">MULTI-OBJECTIVE RECOVERY OPTIMIZER</p><h3>不是找唯一答案，而是看清取捨邊界</h3></div>
+              <div class="optimizer-heading-actions"><span class="tag tag-cyan" id="optimizerStatus">240 CANDIDATES</span><button class="button button-primary" id="runOptimizer">探索 240 個方案</button></div>
+            </div>
+            <div class="objective-controls" role="group" aria-label="最佳化目標權重">
+              <label><span><b>安全</b><output id="safetyWeightOutput">36</output></span><input id="safetyWeight" type="range" min="0" max="60" value="36" /></label>
+              <label><span><b>服務水準</b><output id="serviceWeightOutput">34</output></span><input id="serviceWeight" type="range" min="0" max="60" value="34" /></label>
+              <label><span><b>復原速度</b><output id="speedWeightOutput">20</output></span><input id="speedWeight" type="range" min="0" max="60" value="20" /></label>
+              <label><span><b>能源效率</b><output id="energyWeightOutput">10</output></span><input id="energyWeight" type="range" min="0" max="60" value="10" /></label>
+            </div>
+            <div class="optimizer-body">
+              <div class="pareto-chart">
+                <div class="pareto-label y">複發風險 ↓</div>
+                <svg id="paretoSvg" viewBox="0 0 760 300" preserveAspectRatio="none" aria-label="復原時間與複發風險的 Pareto 邊界">
+                  <g class="pareto-grid"><path d="M54 18V260H742M54 200H742M54 140H742M54 80H742M226 18V260M398 18V260M570 18V260M742 18V260" /></g>
+                  <path id="paretoFrontier" class="pareto-frontier" d="" />
+                  <g id="paretoPoints"></g>
+                </svg>
+                <div class="pareto-label x">預估復原時間 →</div>
+                <div class="pareto-scale"><span>16 min</span><span>24</span><span>32</span><span>40</span><span>48 min</span></div>
+                <div class="pareto-legend"><span><i></i>所有方案</span><span><i></i>Pareto 邊界</span><span><i></i>目前建議</span></div>
+              </div>
+              <aside class="optimizer-recommendation">
+                <div class="recommendation-rank"><span>RECOMMENDED</span><b id="optimizerId">R-000</b><strong id="optimizerScore">—</strong><small>WEIGHTED SCORE</small></div>
+                <p id="optimizerReason">依照目前權重，系統會在服務、安全、速度與能源之間尋找最合適的受治理選項。</p>
+                <div class="optimizer-metrics">
+                  <span><small>復原時間</small><b id="optimizerDuration">—</b></span>
+                  <span><small>複發風險</small><b id="optimizerRisk">—</b></span>
+                  <span><small>服務水準</small><b id="optimizerService">—</b></span>
+                  <span><small>預估能耗</small><b id="optimizerEnergy">—</b></span>
+                </div>
+                <div class="optimizer-recipe"><span><small>線速</small><b id="optimizerPace">—</b></span><span><small>複檢率</small><b id="optimizerInspection">—</b></span><span><small>緩衝</small><b id="optimizerBuffer">—</b></span></div>
+                <button class="button button-ghost" id="stageOptimizedPlan">暫存為復原候選</button>
+              </aside>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" id="view-evidence" data-view-panel="evidence" hidden>
+          <div class="section-intro">
+            <div><p class="kicker"><span></span> ANSWERS YOU CAN VERIFY</p><h2>答案後面，必須站著證據。</h2><p>檢索、引用白名單、證據門檻與人工分流，共同構成可信任的知識工作流。</p></div>
+            <div class="model-chip"><span class="live-dot"></span><div><small>MODEL ROUTE</small><b>mock-local / policy-v7</b></div></div>
+          </div>
+
+          <div class="evidence-layout">
+            <article class="panel rag-panel">
+              <div class="rag-topbar"><span>AUGUST KNOWLEDGE COPILOT</span><div><i></i><b>ACL 已套用</b><small>生產工程 / reviewer</small></div></div>
+              <div class="chat-thread" id="chatThread" aria-live="polite">
+                <div class="welcome-mark">八</div>
+                <h3>問一個需要證據的問題</h3>
+                <p>我只會使用你有權限的文件；找不到可靠證據時，會明確拒答並轉交人工。</p>
+                <div class="prompt-chips">
+                  <button data-query="量產前的 AOI 尺度校正要求是什麼？">AOI 尺度校正要求</button>
+                  <button data-query="什麼情況會觸發安全停機？">安全停機條件</button>
+                  <button data-query="告訴我下季一定會賺錢的投資標的">測試證據不足</button>
+                </div>
+              </div>
+              <form class="query-box" id="queryForm">
+                <input id="queryInput" aria-label="輸入知識問題" placeholder="輸入問題，例如：什麼情況會觸發安全停機？" autocomplete="off" />
+                <button type="submit" aria-label="送出問題">↑</button>
+              </form>
+            </article>
+
+            <aside class="evidence-side">
+              <article class="panel evidence-score-panel">
+                <div class="panel-heading"><div><p class="kicker">QUALITY GATE</p><h3>證據狀態</h3></div><span class="tag tag-good" id="evidenceTag">READY</span></div>
+                <div class="evidence-gauge" id="evidenceGauge" style="--score: 92"><div><b id="evidenceScore">92</b><small>/ 100</small></div></div>
+                <div class="gate-checks">
+                  <span><i>✓</i> 身分與集合權限</span>
+                  <span><i>✓</i> 引用存在且可存取</span>
+                  <span><i>✓</i> 輸出結構驗證</span>
+                  <span><i>✓</i> Trace 已寫入稽核</span>
+                </div>
+              </article>
+              <article class="panel trace-panel">
+                <div class="panel-heading"><div><p class="kicker">WORKFLOW TRACE</p><h3>處理軌跡</h3></div><span class="trace-id">#W-0826-118</span></div>
+                <ol class="trace-list" id="traceList">
+                  <li class="done"><i></i><div><b>權限檢查</b><small>3 ms</small></div></li>
+                  <li class="done"><i></i><div><b>混合檢索</b><small>18 ms</small></div></li>
+                  <li class="done"><i></i><div><b>證據門檻</b><small>4 ms</small></div></li>
+                  <li><i></i><div><b>等待提問</b><small>—</small></div></li>
+                </ol>
+              </article>
+            </aside>
+          </div>
+
+          <article class="panel lineage-panel">
+            <div class="panel-heading"><div><p class="kicker">LINEAGE / GOVERNANCE</p><h3>資料與模型資產</h3></div><button class="text-button" id="toggleLineage">顯示全部</button></div>
+            <div class="asset-table" role="table" aria-label="資料與模型資產">
+              <div class="asset-row asset-head" role="row"><span>資產</span><span>來源</span><span>版本</span><span>品質</span><span>最近驗證</span><span>狀態</span></div>
+              <div class="asset-row" role="row"><span><i class="asset-icon">D</i><b>production_sop</b></span><span>Markdown / ACL</span><span>v7.2</span><span>98.4</span><span>2 分鐘前</span><span><em class="good">ACTIVE</em></span></div>
+              <div class="asset-row" role="row"><span><i class="asset-icon">M</i><b>aoi_surface_v1</b></span><span>ONNX / KSDD2</span><span>sha 4f8a…c21</span><span>91.6</span><span>18 分鐘前</span><span><em class="good">ACTIVE</em></span></div>
+              <div class="asset-row" role="row"><span><i class="asset-icon">F</i><b>demand_registry</b></span><span>Rolling origin</span><span>v12</span><span>93.1</span><span>今天 08:02</span><span><em class="good">ACTIVE</em></span></div>
+              <div class="asset-row extra-row" role="row" hidden><span><i class="asset-icon">R</i><b>risk_features</b></span><span>Daily snapshot</span><span>v4.6</span><span>95.8</span><span>昨天 23:40</span><span><em class="amber">MONITOR</em></span></div>
+              <div class="asset-row extra-row" role="row" hidden><span><i class="asset-icon">P</i><b>prompt_policy</b></span><span>PromptOps</span><span>v7</span><span>97.2</span><span>昨天 18:12</span><span><em class="good">ACTIVE</em></span></div>
+            </div>
+          </article>
+
+          <article class="panel eval-lab-panel">
+            <div class="panel-heading">
+              <div><p class="kicker">GOLDEN SET / REGRESSION GATE</p><h3>AI 版本評測實驗室</h3></div>
+              <div class="eval-actions"><span class="tag tag-good" id="evalGateTag">CANDIDATE READY</span><button class="button button-ghost" id="runEvaluation">重新評測 <span id="evalQuestionCount">24</span> 題</button><button class="button button-primary" id="promoteCandidate">發布 v8</button></div>
+            </div>
+            <div class="eval-body">
+              <div class="model-compare">
+                <div class="model-version current"><div><span>CURRENT</span><b>policy-v7</b><small>mock-local · released</small></div><strong>92.1</strong></div>
+                <div class="compare-arrow">→<small>+3.7</small></div>
+                <div class="model-version candidate"><div><span>CANDIDATE</span><b>policy-v8</b><small>mock-local · validated</small></div><strong id="candidateScore">95.8</strong></div>
+                <div class="eval-progress" id="evalProgress"><i></i></div>
+              </div>
+              <div class="metric-compare">
+                <div><span><b>引用正確</b><small>23 / 24</small></span><div><i style="--current:91%;--candidate:96%"></i><em>+5</em></div></div>
+                <div><span><b>安全拒答</b><small>8 / 8</small></span><div><i style="--current:88%;--candidate:100%"></i><em>+12</em></div></div>
+                <div><span><b>關鍵詞召回</b><small>94.2%</small></span><div><i style="--current:90%;--candidate:94%"></i><em>+4</em></div></div>
+                <div><span><b>P50 延遲</b><small>38 ms</small></span><div><i class="reverse" style="--current:72%;--candidate:84%"></i><em>-9ms</em></div></div>
+              </div>
+              <div class="golden-cases">
+                <div class="golden-head"><span>黃金題集抽樣</span><span>v7</span><span>v8</span></div>
+                <div><span><i>OPS</i>安全停機條件</span><em>PASS</em><em>PASS</em></div>
+                <div><span><i>AOI</i>校正值可否直接量產</span><em class="warn">PARTIAL</em><em>PASS</em></div>
+                <div><span><i>RISK</i>要求保證投資獲利</span><em>PASS</em><em>PASS</em></div>
+                <div><span><i>ACL</i>查詢未授權維修紀錄</span><em>PASS</em><em>PASS</em></div>
+              </div>
+            </div>
+            <div class="eval-log" id="evalLog"><span class="live-dot"></span><p><b>最近評測：</b>24 題、5 個 scorer、0 個阻擋性退步 · <time>08:18:42</time></p><small>dataset / august-golden-v3 · sha 62bc…91a</small></div>
+          </article>
+
+          <div class="evidence-intelligence-grid">
+            <article class="panel knowledge-graph-panel">
+              <div class="panel-heading">
+                <div><p class="kicker">OPERATIONAL KNOWLEDGE GRAPH</p><h3>物件、關係與決策在同一張圖上</h3></div>
+                <div class="graph-filters" role="group" aria-label="知識圖譜類型篩選"><button class="is-active" data-graph-filter="all">全部</button><button data-graph-filter="asset">資產</button><button data-graph-filter="data">資料</button><button data-graph-filter="model">模型</button><button data-graph-filter="decision">決策</button></div>
+              </div>
+              <div class="knowledge-graph-body">
+                <div class="graph-canvas">
+                  <svg id="knowledgeGraphSvg" viewBox="0 0 930 310" aria-label="LINE 03 營運知識圖譜"><defs><marker id="graphArrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" /></marker></defs><g id="graphEdges"></g><g id="graphNodes"></g></svg>
+                </div>
+                <aside class="graph-inspector">
+                  <span id="graphKind">DECISION OBJECT</span><h4 id="graphTitle">DECISION-B</h4><p id="graphMeta">復原方案 · 人工批准</p>
+                  <div id="graphRelations" class="graph-relations"></div>
+                  <div class="graph-queries"><button data-graph-query="decision">這個決策依賴什麼？</button><button data-graph-query="handoff">交班記憶來自哪裡？</button></div>
+                </aside>
+              </div>
+            </article>
+
+            <article class="panel autonomy-panel">
+              <div class="panel-heading"><div><p class="kicker">AI AUTONOMY CONTROL</p><h3>把「能做什麼」寫成可檢查的政策</h3></div><span class="tag tag-amber" id="autonomyTag">STAGE ONLY</span></div>
+              <div class="agent-identity"><i>八</i><div><span>DEDICATED AGENT IDENTITY</span><b>august-ops-agent@local</b><small>scope / LINE 03 · session expires 09:30</small></div></div>
+              <div class="autonomy-levels" role="radiogroup" aria-label="AI 自主權層級">
+                <button role="radio" aria-checked="false" data-autonomy-level="observe"><span>01</span><b>觀測</b><small>只能讀取</small></button>
+                <button role="radio" aria-checked="false" data-autonomy-level="recommend"><span>02</span><b>建議</b><small>提出選項</small></button>
+                <button class="is-active" role="radio" aria-checked="true" data-autonomy-level="stage"><span>03</span><b>暫存</b><small>準備動作</small></button>
+                <button role="radio" aria-checked="false" data-autonomy-level="execute"><span>04</span><b>執行</b><small>仍受批准約束</small></button>
+              </div>
+              <div class="autonomy-matrix" id="autonomyMatrix"></div>
+              <div class="boundary-note"><i>!</i><p><b>不可繞過的邊界</b><span>復歸馬達需要 safety_owner + shift_lead；發布生產計畫需要 planner。切到「執行」只代表可提出執行請求，不等於自動取得批准。</span></p></div>
+            </article>
+          </div>
+
+          <article class="panel release-center-panel">
+            <div class="panel-heading">
+              <div><p class="kicker">RELEASE EVIDENCE / PROVENANCE</p><h3>不只展示能運行，也說明這一版從哪裡來</h3></div>
+              <div class="release-actions"><span class="tag tag-amber" id="releaseTag" role="status" aria-live="polite">UNVERIFIED</span><button class="button button-ghost" id="installApp" disabled>安裝應用</button><button class="button button-primary" id="verifyRelease">驗證發布候選</button><button class="text-button" id="exportRelease" disabled>下載證據清單 ↗</button></div>
+            </div>
+            <p class="release-disclaimer">這是受 SLSA 啟發的本地發布證據視圖，不宣稱通過 SLSA 認證；指紋會在瀏覽器內對實際核心檔案計算 SHA-256。</p>
+            <div class="release-pipeline" aria-label="發布證據階段">
+              <div class="is-ready"><span>01</span><b>SOURCE</b><small>本地工作區<br />合成資料邊界</small></div><i>→</i>
+              <div class="is-ready"><span>02</span><b>BUILD</b><small>零依賴靜態應用<br />v5.0.0</small></div><i>→</i>
+              <div id="releaseVerifyStage"><span>03</span><b>VERIFY</b><small id="releaseCheckSummary">0 / 5 checks</small></div><i>→</i>
+              <div id="releaseReadyStage"><span>04</span><b>RELEASE</b><small>RC-2026-08-27.5</small></div>
+            </div>
+            <div class="release-grid">
+              <div class="artifact-manifest"><div class="mini-heading"><span>A</span><b>核心產物與內容指紋</b></div><div id="artifactRows" class="artifact-rows"></div></div>
+              <aside class="release-verification"><div class="mini-heading"><span>V</span><b>發布閘門</b></div><div id="releaseChecks" class="release-checks"></div><div class="install-state" aria-live="polite"><i></i><p><b id="pwaStatus">安裝能力準備中</b><small>Manifest + Service Worker + 離線核心殼層</small></p><em id="networkStatus">ONLINE</em></div></aside>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" id="view-collection" data-view-panel="collection" hidden>
+          <div class="collection-hero">
+            <div class="collection-number" aria-hidden="true">08</div>
+            <div><p class="kicker"><span></span> THE 2026 AUGUST COLLECTION</p><h2>不是八個孤島，<br />是一套完整的工程語言。</h2><p>每個模組都能獨立運作；組合起來，則涵蓋資料、感知、安全、AI、預測、設計與決策。</p></div>
+            <div class="collection-meta"><span><small>PERIOD</small><b>2026 / AUG</b></span><span><small>MODULES</small><b>08</b></span><span><small>PRINCIPLE</small><b>VERIFIABLE</b></span></div>
+          </div>
+
+          <div class="collection-toolbar">
+            <div class="filter-tabs" role="group" aria-label="篩選作品領域">
+              <button class="is-active" data-filter="all">全部 08</button>
+              <button data-filter="physical">實體系統 03</button>
+              <button data-filter="intelligence">智慧決策 03</button>
+              <button data-filter="foundation">資料治理 02</button>
+            </div>
+            <p><span class="live-dot"></span>所有作品皆有可重現 Demo 與驗證邊界</p>
+          </div>
+
+          <div class="module-grid" id="moduleGrid">
+            <button class="module-card feature" data-category="physical" data-module="aoi">
+              <div class="module-index">01 <span>PHYSICAL</span></div><div class="module-art art-aoi"><i></i><i></i><i></i><b>97.1%</b><small>ACCURACY</small></div><div class="module-copy"><p>電腦視覺 / ONNX / WPF</p><h3>Surface AOI<br />Inspector</h3><span>像素級瑕疵、尺寸換算與融合判定</span></div><em>開啟模組 ↗</em>
+            </button>
+            <button class="module-card" data-category="physical" data-module="edge">
+              <div class="module-index">02 <span>PHYSICAL</span></div><div class="module-art art-edge"><svg viewBox="0 0 320 140" preserveAspectRatio="none"><path d="M0 85 L22 83 31 86 44 78 55 85 75 83 85 36 94 112 106 83 128 85 146 80 166 86 182 83 196 78 210 84 232 82 245 68 254 94 266 82 285 84 300 78 320 83"/></svg><span>1,000 Hz</span></div><div class="module-copy"><p>C11 / Zephyr / Telemetry</p><h3>RTSafe<br />Sensor Hub</h3><span>即時感測、安全狀態機與故障降級</span></div><em>開啟模組 ↗</em>
+            </button>
+            <button class="module-card" data-category="intelligence" data-module="forecast">
+              <div class="module-index">03 <span>INTELLIGENCE</span></div><div class="module-art art-bars"><i style="height:38%"></i><i style="height:54%"></i><i style="height:47%"></i><i style="height:69%"></i><i style="height:64%"></i><i style="height:83%"></i><i style="height:94%"></i></div><div class="module-copy"><p>Time series / Scenario</p><h3>Demand Planning<br />Workbench</h3><span>回測選模、預測區間與版本化情境</span></div><em>開啟模組 ↗</em>
+            </button>
+            <button class="module-card" data-category="foundation" data-module="aiops">
+              <div class="module-index">04 <span>FOUNDATION</span></div><div class="module-art art-nodes"><i></i><i></i><i></i><i></i><span>MODEL<br />GATEWAY</span></div><div class="module-copy"><p>LLM Gateway / PromptOps</p><h3>KnowledgeOps<br />Studio</h3><span>多模型路由、權限與品質評測</span></div><em>開啟模組 ↗</em>
+            </button>
+            <button class="module-card" data-category="physical" data-module="eda">
+              <div class="module-index">05 <span>PHYSICAL</span></div><div class="module-art art-board"><span>PDN</span><i></i><i></i><i></i><i></i></div><div class="module-copy"><p>EDA / SPICE / PCB</p><h3>SimOps<br />Studio</h3><span>電路模擬、排程與 AI 風險摘要</span></div><em>開啟模組 ↗</em>
+            </button>
+            <button class="module-card" data-category="intelligence" data-module="finance">
+              <div class="module-index">06 <span>INTELLIGENCE</span></div><div class="module-art art-risk"><div></div><span>VaR</span><b>3.19%</b></div><div class="module-copy"><p>ML / Risk / Monitoring</p><h3>OpenFund Risk<br />Workbench</h3><span>特徵治理、風險預測與模型監控</span></div><em>開啟模組 ↗</em>
+            </button>
+            <button class="module-card" data-category="intelligence" data-module="rag">
+              <div class="module-index">07 <span>INTELLIGENCE</span></div><div class="module-art art-evidence"><span>“</span><i>01</i><i>02</i><i>03</i></div><div class="module-copy"><p>RAG / Agent / Evaluation</p><h3>OpsFlow<br />Agent</h3><span>有引用、可拒答、可人工接手的工作流</span></div><em>開啟模組 ↗</em>
+            </button>
+            <button class="module-card" data-category="foundation" data-module="etl">
+              <div class="module-index">08 <span>FOUNDATION</span></div><div class="module-art art-data"><span>CSV</span><i>→</i><span>SQL</span><i>→</i><span>BI</span></div><div class="module-copy"><p>SQL / ETL / Data quality</p><h3>Retail Data<br />Hub</h3><span>跨資料庫契約、品質閘門與報表層</span></div><em>開啟模組 ↗</em>
+            </button>
+          </div>
+
+          <article class="panel capability-catalog-panel">
+            <div class="panel-heading">
+              <div><p class="kicker">CAPABILITY CATALOG / OWNERSHIP MAP</p><h3>八個作品如何組成一個可負責、可維護的系統</h3></div>
+              <span class="tag tag-cyan" id="catalogCount">08 CAPABILITIES</span>
+            </div>
+            <div class="catalog-toolbar" role="group" aria-label="能力目錄領域篩選">
+              <button class="is-active" data-catalog-filter="all">全部</button>
+              <button data-catalog-filter="physical">實體系統</button>
+              <button data-catalog-filter="intelligence">智慧決策</button>
+              <button data-catalog-filter="governance">AI 治理</button>
+              <button data-catalog-filter="foundation">資料基礎</button>
+            </div>
+            <div class="catalog-layout">
+              <div class="catalog-table" role="table" aria-label="2026_8月合輯能力目錄">
+                <div class="catalog-row catalog-head" role="row"><span>能力 / 元件</span><span>負責人</span><span>生命週期</span><span>提供</span></div>
+                <div id="catalogRows"></div>
+              </div>
+              <aside class="catalog-inspector" id="catalogInspector">
+                <span>SELECTED CAPABILITY</span><h4>CAP-01</h4><b>Surface AOI Inspector</b><p>選擇左側能力，查看它取用什麼、提供什麼、如何驗證，以及不能越界宣稱的範圍。</p>
+              </aside>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+    <input id="snapshotFile" type="file" accept="application/json,.json" hidden />
+
+    <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+    <aside class="drawer" id="drawer" aria-labelledby="drawerTitle" aria-hidden="true">
+      <button class="drawer-close" id="closeDrawer" aria-label="關閉">×</button>
+      <div id="drawerContent"></div>
+    </aside>
+
+    <div class="command-backdrop" id="commandBackdrop" hidden>
+      <div class="command-palette" role="dialog" aria-modal="true" aria-labelledby="commandTitle">
+        <div class="command-search"><span>⌕</span><input id="commandInput" placeholder="搜尋頁面、設備或操作…" autocomplete="off" /><kbd>ESC</kbd></div>
+        <div class="command-body">
+          <p id="commandTitle">快速前往</p>
+          <button data-command-view="overview"><span>⌂</span><div><b>營運總覽</b><small>查看全系統狀態</small></div><kbd>01</kbd></button>
+          <button data-command-view="line"><span>⌁</span><div><b>場域分身</b><small>定位設備與即時訊號</small></div><kbd>02</kbd></button>
+          <button data-command-view="incident"><span>⌬</span><div><b>事件中心</b><small>重播與處置 INC-0826-0421</small></div><kbd>03</kbd></button>
+          <button data-command-view="decisions"><span>↗</span><div><b>決策實驗室</b><small>比較需求與風險情境</small></div><kbd>04</kbd></button>
+          <button data-command-view="evidence"><span>◈</span><div><b>證據中樞</b><small>查詢 SOP 與評測 AI</small></div><kbd>05</kbd></button>
+          <button data-command-view="collection"><span>▦</span><div><b>作品與能力目錄</b><small>檢視八個模組的責任邊界</small></div><kbd>MAP</kbd></button>
+          <p>可執行操作</p>
+          <button data-command-action="story"><span>▶</span><div><b>啟動整線演練</b><small>執行五階段故障情境</small></div><kbd>RUN</kbd></button>
+          <button data-command-action="tour"><span>◎</span><div><b>開啟作品導覽</b><small>沿六個章節理解整套作品</small></div><kbd>06</kbd></button>
+          <button data-command-action="portfolio"><span>⇩</span><div><b>下載作品說明書</b><small>依目前觀看視角整理完整成果</small></div><kbd>MD</kbd></button>
+          <button data-command-action="brief"><span>↓</span><div><b>匯出事件摘要</b><small>下載 Markdown 事件簡報</small></div><kbd>MD</kbd></button>
+          <button data-command-action="postmortem"><span>↻</span><div><b>生成無責事故復盤</b><small>整理系統因素、行動與成功指標</small></div><kbd>POST</kbd></button>
+          <button data-command-action="release"><span>✓</span><div><b>驗證發布候選</b><small>實算六個核心檔案 SHA-256</small></div><kbd>RC</kbd></button>
+          <button data-command-action="snapshot-export"><span>⇩</span><div><b>下載工作台快照</b><small>攜帶方案、任務與治理狀態</small></div><kbd>JSON</kbd></button>
+          <button data-command-action="snapshot-import"><span>⇧</span><div><b>匯入工作台快照</b><small>在本機恢復同一段演示</small></div><kbd>OPEN</kbd></button>
+        </div>
+        <div class="command-footer"><span><kbd>↑↓</kbd> 選擇</span><span><kbd>↵</kbd> 開啟</span><span>所有操作皆為離線模擬</span></div>
+      </div>
+    </div>
+
+    <div class="tour-backdrop" id="tourBackdrop" hidden>
+      <div class="tour-rail" aria-hidden="true"><span class="is-active"></span><span></span><span></span><span></span><span></span><span></span></div>
+      <section class="tour-card" role="dialog" aria-modal="true" aria-labelledby="tourTitle">
+        <button class="tour-close" id="closeTour" aria-label="關閉作品導覽">×</button>
+        <div class="tour-progress"><span id="tourStep">CHAPTER 01 / 06</span><i><b id="tourProgress"></b></i></div>
+        <p class="kicker" id="tourKicker">OBSERVE / 觀測</p>
+        <h2 id="tourTitle">先看見整條系統，<br />而不是一個孤立指標。</h2>
+        <p id="tourCopy">八個作品共用同一條 Trace：資料進站、即時感測、視覺品質、模型與營運決策彼此可追溯。</p>
+        <div class="tour-proof" id="tourProof"><span>8 個模組</span><span>1 條決策鏈</span><span>0 外部 API</span></div>
+        <div class="tour-actions"><button class="button button-ghost" id="tourPrev" disabled>上一章</button><button class="button button-primary" id="tourNext">下一章：理解事件</button></div>
+        <small class="tour-hint">畫面會跟著章節切換；你也可以隨時關閉並自由探索。</small>
+      </section>
+    </div>
+
+    <div class="lens-backdrop" id="lensBackdrop" hidden>
+      <section class="lens-dialog" role="dialog" aria-modal="true" aria-labelledby="lensDialogTitle">
+        <button class="tour-close" id="closeLens" aria-label="關閉觀看視角">×</button>
+        <p class="kicker">ADAPTIVE PORTFOLIO NARRATIVE</p>
+        <h2 id="lensDialogTitle">你想從哪個角度，<br />閱讀這套作品？</h2>
+        <p>底層能力與證據不變；系統只會重新安排最重要的訊息、成果與推薦路徑。</p>
+        <div class="lens-options" role="radiogroup" aria-label="選擇觀看視角">
+          <button class="is-active" role="radio" aria-checked="true" data-lens="strategy"><span>01</span><div><b>策略視角</b><small>先看影響、風險與決策價值</small></div><em>VALUE</em></button>
+          <button role="radio" aria-checked="false" data-lens="operations"><span>02</span><div><b>現場視角</b><small>先看異常、任務與復原動作</small></div><em>ACTION</em></button>
+          <button role="radio" aria-checked="false" data-lens="engineering"><span>03</span><div><b>工程視角</b><small>先看訊號、版本與驗證邊界</small></div><em>PROOF</em></button>
+        </div>
+        <div class="lens-dialog-footer"><small>偏好只保存在目前裝置</small><button class="button button-primary" id="applyLens">套用策略視角</button></div>
+      </section>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

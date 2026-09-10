@@ -1,0 +1,3 @@
+const {chromium}=require('playwright');
+const fs=require('node:fs');
+(async()=>{const browser=await chromium.launch({headless:true,channel:'msedge'});const page=await browser.newPage({viewport:{width:700,height:520},deviceScaleFactor:1});await page.goto('http://127.0.0.1:4173/tools/axis-still.html');await page.waitForFunction(()=>window.stillReady);fs.mkdirSync('assets/modules',{recursive:true});for(let i=0;i<9;i++){await page.evaluate(i=>window.renderProject(i),i);await page.screenshot({path:'assets/modules/module-'+String(i+1).padStart(2,'0')+'.png',omitBackground:true});}await browser.close();console.log('9 module portraits rendered.');})().catch(e=>{console.error(e);process.exitCode=1;});

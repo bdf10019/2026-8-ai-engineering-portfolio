@@ -1,0 +1,55 @@
+{
+  "id": "./",
+  "name": "2026_8月合輯",
+  "short_name": "2026_8月",
+  "description": "八種工程能力，一條可驗證、可治理、可學習的工業智慧決策鏈。",
+  "lang": "zh-Hant",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b0d0f",
+  "theme_color": "#0b0d0f",
+  "categories": ["business", "developer", "productivity"],
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./og.png",
+      "sizes": "1731x909",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "2026_8月合輯工業智慧營運總覽"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "營運總覽",
+      "short_name": "總覽",
+      "url": "./#overview"
+    },
+    {
+      "name": "事件中心",
+      "short_name": "事件",
+      "url": "./#incident"
+    },
+    {
+      "name": "證據中樞",
+      "short_name": "證據",
+      "url": "./#evidence"
+    }
+  ]
+}

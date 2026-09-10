@@ -1,0 +1,119 @@
+{
+  "date": "2026-09-09T19:54:16.512Z",
+  "browser": "Headless Microsoft Edge",
+  "checks": [
+    {
+      "name": "Desktop: 8 chapters, 9 works, 12 evidence points, live WebGL",
+      "passed": true
+    },
+    {
+      "name": "All desktop chapters fit viewport without header overlap",
+      "passed": true,
+      "bounds": [
+        {
+          "id": "problem",
+          "top": 223,
+          "bottom": 737
+        },
+        {
+          "id": "field",
+          "top": 135,
+          "bottom": 850
+        },
+        {
+          "id": "data",
+          "top": 148,
+          "bottom": 812
+        },
+        {
+          "id": "decisions",
+          "top": 140,
+          "bottom": 820
+        },
+        {
+          "id": "model-forge",
+          "top": 149,
+          "bottom": 811
+        },
+        {
+          "id": "evidence",
+          "top": 191,
+          "bottom": 769
+        },
+        {
+          "id": "delivery",
+          "top": 200,
+          "bottom": 760
+        }
+      ]
+    },
+    {
+      "name": "Perception selector and arrow-key tabs",
+      "passed": true
+    },
+    {
+      "name": "Flow selector updates title, outputs and source",
+      "passed": true
+    },
+    {
+      "name": "Three scenarios update curve, demand, pressure and margin",
+      "passed": true
+    },
+    {
+      "name": "NF4, Q8, Q4: exact measured metrics and release decisions",
+      "passed": true
+    },
+    {
+      "name": "12 evidence dialogs: populated, Escape closes, focus restored",
+      "passed": true
+    },
+    {
+      "name": "9 project dossiers: module portraits and process diagrams",
+      "passed": true
+    },
+    {
+      "name": "3D module hotspot opens linked project",
+      "passed": true
+    },
+    {
+      "name": "Scroll moves 3D scene and reverse returns to first chapter",
+      "passed": true
+    },
+    {
+      "name": "1366×768 laptop: model controls remain in viewport",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion unpins scenes and retains interactions",
+      "passed": true
+    },
+    {
+      "name": "390×844 touch: no horizontal overflow, tabs and evidence usable",
+      "passed": true
+    },
+    {
+      "name": "Touch orientation change preserves width and content",
+      "passed": true
+    },
+    {
+      "name": "No JavaScript: 8 chapters, posters and readable evidence index",
+      "passed": true
+    },
+    {
+      "name": "System reduced-motion respected at first load",
+      "passed": true
+    },
+    {
+      "name": "WebGL unavailable: poster fallback and interactions survive",
+      "passed": true
+    },
+    {
+      "name": "Downloads and 12 source snapshots resolve; GLB has all 10 named parts",
+      "passed": true
+    },
+    {
+      "name": "Desktop runtime has no page errors or console errors",
+      "passed": true
+    }
+  ]
+}

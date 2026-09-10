@@ -1,0 +1,52 @@
+{
+  "schema": "collection.release/v1",
+  "releaseId": "RC-2026-08-27.5",
+  "name": "2026_8月合輯",
+  "version": "5.0.0",
+  "capturedAt": "2026-08-27",
+  "scope": "LOCAL DETERMINISTIC DEMO",
+  "claim": "SLSA-inspired provenance view; not a SLSA compliance claim",
+  "source": {
+    "workspace": "2026_8月合輯",
+    "revision": "local-workspace",
+    "syntheticData": true
+  },
+  "verification": {
+    "tests": 22,
+    "passed": 22,
+    "failed": 0,
+    "policy": "POLICY-v8",
+    "dataset": "august-golden-v4"
+  },
+  "artifacts": [
+    {
+      "path": "index.html",
+      "sha256": "b6917d96679278e1efb693d1cdd704a9ba12ea9885e5346cc6a0080a5c32df67"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "e97f4b86053ea101deff643055a7f58723c1ee2d3abc48c63c187d3155f61930"
+    },
+    {
+      "path": "app.js",
+      "sha256": "60522c6c6868f0975156990440a80284099a36802953a709e6e12efe53c13432"
+    },
+    {
+      "path": "engine.js",
+      "sha256": "499c35c691c800078a27168d2cdedbad9ab31253a108721f4b05e6e4dd18d12b"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "sha256": "a740328dfd531da47c1367b352175bdcdf9d72f1b479f3ef1c65e1ada2b478a3"
+    },
+    {
+      "path": "sw.js",
+      "sha256": "080fd0f4574cf7539b44186ea1b805b8a4c26b6af4a23de038544d161f38d186"
+    }
+  ],
+  "limitations": [
+    "This file records a local workspace snapshot and is not cryptographically signed.",
+    "The project does not claim SLSA certification or a formal supply-chain assurance level.",
+    "All operational values and events are deterministic synthetic demonstrations."
+  ]
+}
