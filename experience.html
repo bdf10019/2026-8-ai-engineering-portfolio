@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026_8月合輯｜AI 與工程實務作品集。整合九項 AI、資料分析與工程應用專案，透過持續運作的 3D 場景與互動監看，呈現各項技術的處理流程、判斷依據與應用限制。">
+  <meta name="theme-color" content="#ebeee7"><title>2026_8月合輯｜AI 與工程實務作品集</title>
+  <link rel="icon" href="assets/axis-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="experience.css">
+</head>
+<body>
+<a class="skip-link" href="#exhibit">跳到互動展示</a>
+<section class="opening-curtain" id="openingCurtain" aria-labelledby="curtainTitle">
+  <div class="curtain-particles" aria-hidden="true"></div>
+  <div class="curtain-copy">
+    <p class="overline">2026_8月合輯 · 09 INTERACTIVE PROJECTS</p>
+    <h1 id="curtainTitle">AI 與工程<br><em>實務作品集</em></h1>
+    <p>選擇由系統逐站解說、實際操作每個情境，或保留自己的速度，自由探索九座互動場景。</p>
+  </div>
+  <aside class="curtain-intro" aria-labelledby="curtainIntroTitle">
+    <p class="overline">ABOUT THIS COLLECTION</p>
+    <h2 id="curtainIntroTitle">九個作品，<br>一套從問題到判斷的實務過程</h2>
+    <p>這是一套把人工智慧、資料處理與工程應用變成互動場景的作品集。九個作品分別模擬產品檢查、設備安全、資料核對、文件問答、事件調查、需求規劃、風險觀察、電路模擬與模型發布。你不需要技術背景；跟著畫面往下看，就能了解資料如何進入系統、系統如何作出判斷，以及遇到異常時，為什麼要阻擋、停止或交由人員確認。</p>
+  </aside>
+  <button class="curtain-play" id="startAutoTour" type="button" aria-describedby="autoTourDescription">
+    <span class="curtain-play-icon" aria-hidden="true">▶</span>
+    <span><b>自動導覽模式</b><small id="autoTourDescription">約 5 分鐘 · 情境字幕 · 慢速流光過場</small></span>
+  </button>
+  <button class="curtain-manual" id="startManualTour" type="button"><span>手動遊覽</span><small>依自己的速度捲動與操作</small><b aria-hidden="true">↓</b></button>
+  <p class="curtain-index" aria-hidden="true">01 — 09<br>SCROLL / PLAY</p>
+</section>
+<header class="site-header">
+  <a class="identity" href="#aoi" data-stop="aoi" aria-label="AI 與工程實務作品集，返回第一章"><img src="assets/axis-mark.svg" width="30" height="30" alt=""><span><strong class="identity-title">AI 與工程實務作品集</strong><small>2026_8月合輯</small></span></a>
+  <nav aria-label="場景導覽"><a href="#aoi" data-stop="aoi">01 視覺檢測</a><a href="#safe" data-stop="safe">02 即時安全</a><a href="#retail" data-stop="retail">03 資料對帳</a><a href="#knowledge" data-stop="knowledge">04 知識治理</a><a href="#ops" data-stop="ops">05 事件調查</a><a href="#planning" data-stop="planning">06 需求規劃</a><a href="#risk" data-stop="risk">07 風險觀測</a><a href="#simops" data-stop="simops">08 電路模擬</a><a href="#forge" data-stop="forge">09 模型治理</a><a href="#collection">全部作品 ↗</a></nav>
+  <button class="motion-toggle" id="motionToggle" type="button" aria-pressed="false" disabled>減少動態</button>
+</header>
+<aside class="tour-guide" id="tourGuide" aria-label="自動導覽字幕" hidden>
+  <div class="tour-subtitle-window" id="tourSubtitleWindow" aria-hidden="true">
+    <p class="tour-subtitle-old" id="tourSubtitleOld"></p>
+    <p class="tour-subtitle-current" id="tourSubtitleCurrent"></p>
+  </div>
+</aside>
+<div class="tour-controls" id="tourControls" hidden>
+  <span id="tourGuideProgress">01 / 09</span>
+  <button id="tourSpeed" type="button" aria-label="切換自動導覽速度">速度 1×</button>
+  <button id="tourPause" type="button" aria-pressed="false">Ⅱ 暫停</button>
+  <button id="tourSkip" type="button">下一句 →</button>
+  <button id="tourExit" type="button">退出</button>
+</div>
+<div class="tour-complete" id="tourComplete" aria-label="導覽完成選項" hidden>
+  <span>九站導覽完成</span>
+  <button id="tourReplay" type="button">↻ 重新播放</button>
+  <button id="tourExplore" type="button">自由探索</button>
+  <button id="tourProjects" type="button">查看專案內容 ↗</button>
+</div>
+<main>
+  <div class="journey" id="journey">
+    <span id="aoi" class="anchor aoi-anchor" aria-hidden="true"></span>
+    <span id="safe" class="anchor safe-anchor" aria-hidden="true"></span>
+    <span id="retail" class="anchor retail-anchor" aria-hidden="true"></span>
+    <span id="knowledge" class="anchor knowledge-anchor" aria-hidden="true"></span>
+    <span id="ops" class="anchor ops-anchor" aria-hidden="true"></span>
+    <span id="simops" class="anchor simops-anchor" aria-hidden="true"></span>
+    <span id="forge" class="anchor forge-anchor" aria-hidden="true"></span>
+    <span id="risk" class="anchor risk-anchor" aria-hidden="true"></span>
+    <span id="planning" class="anchor planning-anchor" aria-hidden="true"></span>
+    <section class="exhibit" id="exhibit" aria-label="AOI、RTSafe、Retail、KnowledgeOps、OpsFlow、Demand Planning、OpenFund、SimOps 與 ModelForge 九站互動場景">
+      <div class="ghost-word" id="ghostWord" aria-hidden="true">INSPECT.</div>
+      <div class="scene-heading" id="sceneHeading">
+        <p class="overline" id="sceneEyebrow"><span class="status-dot"></span> 01 / 視覺檢測實務</p>
+        <h1 id="sceneTitle">從影像辨識，<br><em>到品質判讀</em></h1>
+        <p id="sceneCopy">跟著工件通過檢測站，了解影像如何轉換成品質判斷。切換正常、刮痕與待複核情境，觀察示意缺陷標記與判定結果。</p>
+      </div>
+      <div class="model-host" id="modelHost">
+        <img class="model-poster" id="modelPoster" src="assets/immersive-aoi.svg" alt="工件由輸送帶通過相機檢測門架的示意場景" width="1000" height="600">
+        <canvas id="experienceCanvas" aria-hidden="true"></canvas>
+        <div class="model-tag" id="modelTag"><span>FIG. 01</span> OPTICAL INSPECTION CELL <i>程序化 3D · 非實體設備</i></div>
+      </div>
+      <aside class="live-monitor" id="liveMonitor" aria-label="與工件同步的模擬監看畫面">
+        <div class="monitor-top"><span><i class="status-dot"></i> <b id="monitorTitle">VISION MONITOR</b></span><span class="simulation-label">模擬畫面</span></div>
+        <div class="monitor-image">
+          <svg id="inspectionImage" viewBox="0 0 480 248" role="img" aria-labelledby="inspectionTitle">
+            <title id="inspectionTitle">合成工件與刮痕位置；非真實檢測影像</title>
+            <defs><linearGradient id="metal" x2="0" y2="1"><stop stop-color="#a3b0b0"/><stop offset=".45" stop-color="#d3d8d1"/><stop offset="1" stop-color="#7b8a8a"/></linearGradient><pattern id="grain" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 0H5" stroke="#17292c" opacity=".13"/></pattern></defs>
+            <rect width="480" height="248" fill="#10202a"/><path d="M0 62H480M0 124H480M0 186H480M120 0V248M240 0V248M360 0V248" stroke="#90b4b5" opacity=".12"/>
+            <g id="inspectionWorkpiece"><rect x="89" y="37" width="302" height="176" rx="13" fill="url(#metal)"/><rect x="89" y="37" width="302" height="176" rx="13" fill="url(#grain)"/><g fill="#33474a"><circle cx="109" cy="57" r="6"/><circle cx="371" cy="57" r="6"/><circle cx="109" cy="193" r="6"/><circle cx="371" cy="193" r="6"/></g>
+            <path id="defectPath" d="M231 70l-12 21 16 18-8 20 18 19-10 28" stroke="#33474a" stroke-width="4" fill="none"/>
+            <g id="defectBox"><rect x="198" y="56" width="67" height="130" fill="none" stroke="#f2a278" stroke-dasharray="7 5"/><path d="M265 80h54" stroke="#f2a278"/><text x="280" y="72" fill="#f2a278" font-size="12" font-family="monospace">REGION 01</text></g></g>
+            <path id="scanLine" d="M65 30V220" stroke="#9ffff0" stroke-width="2"/><text x="15" y="230" fill="#95adae" font-size="10" font-family="monospace">SYNTHETIC OPTICAL FEED / NOT A LIVE CAMERA</text>
+          </svg>
+          <svg id="safetyImage" viewBox="0 0 480 248" role="img" aria-labelledby="safetyTitle" hidden>
+            <title id="safetyTitle">合成力量與心跳示意，非硬體實時量測</title>
+            <rect width="480" height="248" fill="#10202a"/><path d="M0 60H480M0 110H480M0 160H480M0 210H480M80 0V248M160 0V248M240 0V248M320 0V248M400 0V248" stroke="#90b4b5" opacity=".14"/>
+            <text x="20" y="27" fill="#95adae" font-size="11" font-family="monospace">FORCE / SIMULATED</text><path d="M20 65H460" stroke="#e99b70" stroke-dasharray="5 5" opacity=".6"/><path id="forceWave" d="M20 111H460" fill="none" stroke="#91dbc3" stroke-width="2.5"/>
+            <text x="20" y="161" fill="#95adae" font-size="11" font-family="monospace">HEARTBEAT / SIMULATED</text><path id="heartbeatWave" d="M20 199h40l5-17 7 32 7-15h381" fill="none" stroke="#91dbc3" stroke-width="2"/>
+            <text x="20" y="236" fill="#95adae" font-size="10" font-family="monospace">DESIGN: 1 kHz / NOT A HARDWARE MEASUREMENT</text>
+          </svg>
+          <svg id="retailImage" viewBox="0 0 480 248" role="img" aria-labelledby="retailTitle" hidden>
+            <title id="retailTitle">合成批次：11 筆輸入，7 合格、3 隔離、1 去重；來源與倉儲淨額 110.0000</title>
+            <rect width="480" height="248" fill="#10202a"/>
+            <g font-family="Arial,Microsoft JhengHei,sans-serif">
+              <text x="24" y="29" font-size="10" fill="#91b2ae">FIXED BATCH / SYNTHETIC</text>
+              <text id="retailCounts" x="24" y="58" font-size="15" fill="#cee3d9">11 筆輸入  /  7 合格  /  3 隔離  /  1 去重</text>
+              <path d="M24 73H456M240 89V146" stroke="#709c9444"/>
+              <text x="24" y="100" fill="#9fb7ae" font-size="12">來源淨額</text><text x="267" y="100" fill="#9fb7ae" font-size="12">倉儲淨額</text>
+              <text id="sourceTotal" x="24" y="132" fill="#dce8e0" font-size="27" font-family="monospace">110.0000</text>
+              <text id="targetTotal" x="267" y="132" fill="#dce8e0" font-size="27" font-family="monospace">110.0000</text>
+              <text id="deltaTotal" x="24" y="160" fill="#91dbc3" font-size="13">差額 0.0000 · 對帳通過</text>
+              <text id="retailWrites" x="24" y="181" fill="#a6bcb3" font-size="11">本次新增 7 筆 / 未變更 0 筆</text>
+              <path d="M24 193H456" stroke="#709c9444"/><rect id="retailCursor" x="24" y="191" width="12" height="4" rx="2" fill="#91dbc3"/>
+              <text id="retailRow" x="24" y="212" fill="#91b2ae" font-size="10" font-family="monospace">ROW 01 · WEB-001</text>
+              <text id="retailRoute" x="24" y="234" fill="#d5e5dc" font-size="12">品質與去重檢查</text>
+            </g>
+          </svg>
+          <svg id="knowledgeImage" viewBox="0 0 480 248" role="img" aria-labelledby="knowledgeTitle" hidden>
+            <title id="knowledgeTitle">合成知識流程：引用通過；固定離線腳本，非真實模型推論</title>
+            <rect width="480" height="248" fill="#10202a"/>
+            <g font-family="Arial,Microsoft JhengHei,sans-serif">
+              <text x="24" y="28" fill="#b5a6ce" font-size="10">AUTHORED KNOWLEDGE / DEMO</text>
+              <text id="knowledgeQuestion" x="24" y="54" fill="#dfdce9" font-size="17">設備異常如何通報？</text>
+              <path d="M24 67H456" stroke="#9e86bb44"/>
+              <text x="24" y="86" fill="#a9bcb4" font-size="10">示意回答 / 或拒答原因</text>
+              <text id="knowledgeAnswer" x="24" y="110" fill="#e0ece3" font-size="15">記錄設備編號與異常，通知值班人員。</text>
+              <text id="knowledgeCitation" x="24" y="140" fill="#91dbc3" font-size="15" font-family="monospace">DEMO-SOP-01 §3</text>
+              <text id="knowledgeExcerpt" x="24" y="162" fill="#a7bcb5" font-size="12">異常通報應附設備編號、現象與發生時間。</text>
+              <text id="knowledgeMeta" x="24" y="185" fill="#a99dbc" font-size="11">ACL 通過 · 文件 1 · DEMO-P01 v1</text>
+              <path d="M24 203H456" stroke="#9e86bb66"/><rect id="knowledgeCursor" x="24" y="200" width="78" height="5" rx="2" fill="#b7a1d9"/>
+              <text id="knowledgeTrace" x="24" y="231" fill="#d8d0e5" font-size="13">步驟 3/5 · 示意回答組合</text>
+            </g>
+          </svg>
+          <svg id="opsImage" viewBox="0 0 480 248" role="img" aria-labelledby="opsTitle" hidden>
+            <title id="opsTitle">合成事件調查：固定離線脚本，不執行外部動作</title>
+            <rect width="480" height="248" fill="#10202a"/>
+            <g font-family="Arial,Microsoft JhengHei,sans-serif">
+              <text x="24" y="28" fill="#e9bd7d" font-size="10">AUTHORED INCIDENT / DEMO</text>
+              <text id="opsIncident" x="24" y="53" fill="#eee2cf" font-size="17">DEMO-INC-01 · 運轉狀態查核</text>
+              <path d="M24 67H456" stroke="#b58d5344"/>
+              <text id="opsEvidence" x="24" y="90" fill="#dce7df" font-size="14">遙測、維護紀錄與 SOP 均有示意引用</text>
+              <text id="opsCitation" x="24" y="116" fill="#91dbc3" font-size="14">DEMO-T01 / H01 / SOP-02</text>
+              <text id="opsAction" x="24" y="142" fill="#e8e0d4" font-size="13">建議持續觀察；摘要不是執行授權</text>
+              <text id="opsMeta" x="24" y="165" fill="#d5b887" font-size="12">示意低風險 · 外部動作 0</text>
+              <text id="opsTool" x="24" y="186" fill="#a9bcb4" font-size="11">唯讀工具回傳示意結果</text>
+              <path d="M24 203H456" stroke="#b58d5366"/><rect id="opsCursor" x="24" y="200" width="78" height="5" rx="2" fill="#e9b86b"/>
+              <text id="opsTrace" x="24" y="231" fill="#e8e0d4" font-size="13">步驟 3/5 · 讀取示意證據</text>
+            </g>
+          </svg>
+          <svg id="planningImage" viewBox="0 0 480 248" role="img" aria-labelledby="planningTitle" hidden>
+            <title id="planningTitle">原創七日示意序列：基準 700 件，未執行模型回測</title>
+            <rect width="480" height="248" fill="#10202a"/>
+            <g font-family="Arial,Microsoft JhengHei,sans-serif">
+              <text x="24" y="27" fill="#9bcbd6" font-size="10">AUTHORED FORECAST / DEMO</text>
+              <text id="planningTotal" x="24" y="52" fill="#e3eee7" font-size="19">7 日合計 700 件</text>
+              <text id="planningDelta" x="24" y="72" fill="#b4c6c0" font-size="12">基準 700 · 差異 0 件</text>
+              <path d="M24 158H456" stroke="#91b9be66"/>
+              <rect id="planningBase0" x="36" y="110" width="14" height="48" fill="#c1ccc7"/><rect id="planningBar0" x="53" y="110" width="18" height="48" fill="#91dbc3"/><text x="41" y="177" fill="#b9c9c7" font-size="10">D1</text>
+<rect id="planningBase1" x="97" y="110" width="14" height="48" fill="#c1ccc7"/><rect id="planningBar1" x="114" y="110" width="18" height="48" fill="#91dbc3"/><text x="102" y="177" fill="#b9c9c7" font-size="10">D2</text>
+<rect id="planningBase2" x="158" y="110" width="14" height="48" fill="#c1ccc7"/><rect id="planningBar2" x="175" y="110" width="18" height="48" fill="#91dbc3"/><text x="163" y="177" fill="#b9c9c7" font-size="10">D3</text>
+<rect id="planningBase3" x="219" y="110" width="14" height="48" fill="#c1ccc7"/><rect id="planningBar3" x="236" y="110" width="18" height="48" fill="#91dbc3"/><text x="224" y="177" fill="#b9c9c7" font-size="10">D4</text>
+<rect id="planningBase4" x="280" y="110" width="14" height="48" fill="#c1ccc7"/><rect id="planningBar4" x="297" y="110" width="18" height="48" fill="#91dbc3"/><text x="285" y="177" fill="#b9c9c7" font-size="10">D5</text>
+<rect id="planningBase5" x="341" y="110" width="14" height="48" fill="#c1ccc7"/><rect id="planningBar5" x="358" y="110" width="18" height="48" fill="#91dbc3"/><text x="346" y="177" fill="#b9c9c7" font-size="10">D6</text>
+<rect id="planningBase6" x="402" y="110" width="14" height="48" fill="#c1ccc7"/><rect id="planningBar6" x="419" y="110" width="18" height="48" fill="#91dbc3"/><text x="407" y="177" fill="#b9c9c7" font-size="10">D7</text>
+              <rect id="planningDayCursor" x="32" y="183" width="44" height="3" rx="1.5" fill="#d6ab65"/>
+              <text x="24" y="202" fill="#aebfba" font-size="10">淺柱＝基準 · 彩柱＝情境 · 單位：件</text>
+              <text id="planningDay" x="24" y="222" fill="#e0ece5" font-size="13">第 1 日 · 基準 80 → 情境 80 件</text>
+              <text id="planningRule" x="24" y="241" fill="#9bcbd6" font-size="10">情境 = 基準 × 1.00 · 非因果估計</text>
+            </g>
+          </svg>
+          <svg id="riskImage" viewBox="0 0 480 248" role="img" aria-labelledby="riskTitle" hidden>
+<title id="riskTitle">合成基金持倉示意，不提供買賣建議</title><rect width="480" height="248" fill="#10202a"/>
+<g font-family="Arial,Microsoft JhengHei,sans-serif">
+<text x="24" y="26" fill="#c1b3dd" font-size="10">AUTHORED HOLDINGS / DEMO</text>
+<text id="riskCoverage" x="24" y="52" fill="#e4dfeb" font-size="19">資料涵蓋 100% · 完整</text>
+<text id="riskTop" x="24" y="71" fill="#bfc7cd" font-size="12">最大占比 25% · 平方和 0.2500</text>
+<text x="24" y="93" fill="#dfdce8" font-size="12">A</text><rect id="riskBar0" x="52" y="81" width="90" height="15" rx="2" fill="#b7b1db"/><text id="riskWeight0" x="430" y="93" fill="#e4dfeb" font-size="12">25%</text>
+<text x="24" y="118" fill="#dfdce8" font-size="12">B</text><rect id="riskBar1" x="52" y="106" width="90" height="15" rx="2" fill="#b7b1db"/><text id="riskWeight1" x="430" y="118" fill="#e4dfeb" font-size="12">25%</text>
+<text x="24" y="143" fill="#dfdce8" font-size="12">C</text><rect id="riskBar2" x="52" y="131" width="90" height="15" rx="2" fill="#b7b1db"/><text id="riskWeight2" x="430" y="143" fill="#e4dfeb" font-size="12">25%</text>
+<text x="24" y="168" fill="#dfdce8" font-size="12">D</text><rect id="riskBar3" x="52" y="156" width="90" height="15" rx="2" fill="#b7b1db"/><text id="riskWeight3" x="430" y="168" fill="#e4dfeb" font-size="12">25%</text>
+<rect id="riskCursor" x="14" y="78" width="3" height="20" fill="#e9b86b"/>
+<text id="riskRule" x="24" y="194" fill="#bfc7cd" font-size="12">示意集中門檻 ≥60% · 未觸發此單一規則</text>
+<text id="riskIssuer" x="24" y="217" fill="#dfdce8" font-size="13">發行人 A · 25% 持倉占比</text>
+<text x="24" y="240" fill="#c1b3dd" font-size="11">固定合成資料 · 非模型分數 · 非投資建議</text>
+</g></svg>
+          <svg id="simopsImage" viewBox="0 0 480 248" role="img" aria-labelledby="simopsTitle" hidden>
+<title id="simopsTitle">固定教學阻抗曲線，未執行電路求解器</title><rect width="480" height="248" fill="#10202a"/>
+<g font-family="Arial,Microsoft JhengHei,sans-serif">
+<text x="24" y="26" fill="#9fcfc5" font-size="10">AUTHORED SWEEP / DEMO</text>
+<text id="simopsPeak" x="24" y="50" fill="#e2eee7" font-size="19">示意峰值 46 mΩ</text>
+<text id="simopsJob" x="24" y="69" fill="#b1c9c6" font-size="12">固定教學曲線 · 6 個頻率點</text>
+<path d="M40 80V174H448M40 94H448" fill="none" stroke="#668c8a44"/>
+<path d="M40 134H448" stroke="#e9b86b" stroke-dasharray="5 5"/>
+<text x="350" y="130" fill="#e9b86b" font-size="10">示意門檻 50 mΩ</text>
+<text x="4" y="96" fill="#8fa9a3" font-size="9">100</text><text x="14" y="177" fill="#8fa9a3" font-size="9">0</text>
+<polyline id="simopsCurve" points="" fill="none" stroke="#91dbc3" stroke-width="3" stroke-linejoin="round"/>
+<circle id="simopsDot" cx="40" cy="140.4" r="5" fill="#fff3ce"/>
+<text id="simopsNoResult" x="240" y="112" text-anchor="middle" fill="#f2a278" font-size="16" hidden>NO RESULT · 不補造曲線</text>
+<text x="40.00" y="192" text-anchor="middle" fill="#b1c9c6" font-size="10">0.1</text><text x="117.04" y="192" text-anchor="middle" fill="#b1c9c6" font-size="10">0.3</text><text x="201.48" y="192" text-anchor="middle" fill="#b1c9c6" font-size="10">1</text><text x="278.52" y="192" text-anchor="middle" fill="#b1c9c6" font-size="10">3</text><text x="362.96" y="192" text-anchor="middle" fill="#b1c9c6" font-size="10">10</text><text x="440.00" y="192" text-anchor="middle" fill="#b1c9c6" font-size="10">30</text><text x="404" y="207" fill="#8fa9a3" font-size="9">MHz / 對數軸</text>
+<text id="simopsTrace" x="24" y="223" fill="#e2eee7" font-size="12">步驟 1/6 · 示意掃頻 0.1 MHz · 42 mΩ</text>
+<text x="24" y="242" fill="#9fcfc5" font-size="10">固定樣本，非求解／量測 · 不代表正式 SI/PI 簽核</text>
+</g></svg>
+          <svg id="forgeImage" viewBox="0 0 480 248" role="img" aria-labelledby="forgeTitle" hidden>
+<title id="forgeTitle">ModelForge policy-v2 本機實測來源快照；不是即時推論</title><rect width="480" height="248" fill="#14202f"/>
+<g font-family="Arial,Microsoft JhengHei,sans-serif">
+<text x="24" y="26" fill="#bac7e3" font-size="10">ARCHIVED EVALUATION</text>
+<text id="forgeModel" x="24" y="51" fill="#edf0f6" font-size="19">QLoRA NF4 · 已發布</text>
+<text id="forgeMeta" x="24" y="71" fill="#b8c6dc" font-size="11">來源實測快照 · 224 筆 / 192 max tokens</text>
+<text x="24" y="96" fill="#b8c6dc" font-size="11">event F1</text><rect x="118" y="84" width="270" height="14" fill="#27364b"/><rect id="forgeEventBar" x="118" y="84" width="0" height="14" fill="#91dbc3"/><text id="forgeEventValue" x="451" y="96" text-anchor="end" fill="#edf0f6" font-size="11">—</text>
+<text x="24" y="122" fill="#b8c6dc" font-size="11">severity F1</text><rect x="118" y="110" width="270" height="14" fill="#27364b"/><rect id="forgeSeverityBar" x="118" y="110" width="0" height="14" fill="#91dbc3"/><text id="forgeSeverityValue" x="451" y="122" text-anchor="end" fill="#edf0f6" font-size="11">—</text>
+<text x="24" y="148" fill="#b8c6dc" font-size="11">raw schema</text><rect x="118" y="136" width="270" height="14" fill="#27364b"/><rect id="forgeSchemaBar" x="118" y="136" width="0" height="14" fill="#91dbc3"/><text id="forgeSchemaValue" x="451" y="148" text-anchor="end" fill="#edf0f6" font-size="11">—</text>
+<text id="forgeSize" x="24" y="173" fill="#b8c6dc" font-size="11">NF4：未列可比 GGUF 大小</text>
+<text id="forgeCompare" x="24" y="193" fill="#e6cba0" font-size="11">NF4 與 GGUF 生成契約不同；只作描述</text>
+<path d="M24 208H448" stroke="#53637d"/><rect id="forgeCursor" x="24" y="205" width="74" height="5" rx="2" fill="#b4b6ef"/>
+<text id="forgeTrace" x="24" y="228" fill="#edf0f6" font-size="12">解說 1/5 · 資料與設定指紋</text>
+<text x="24" y="244" fill="#96a9c4" font-size="9">來源 policy-v2 · 動畫非訓練／推論／發布 · 非真實工廠準確率</text>
+</g></svg>
+          <span class="feed-corner" id="unitLabel">PART 0001</span>
+        </div>
+        <div class="monitor-result"><div><small id="resultCaption">檢測結果</small><strong id="resultValue">NG</strong></div><p id="resultReason">刮痕超過示意門檻</p></div>
+        <div class="monitor-bottom"><span id="cycleLabel">工件進站</span><button id="enlargeMonitor" type="button" disabled aria-haspopup="dialog">放大畫面 ↗</button></div>
+        <div class="scenario-control" id="aoiControls" role="group" aria-label="AOI 模擬情境"><button data-aoi="normal" aria-pressed="false" disabled>正常品</button><button data-aoi="scratch" aria-pressed="true" disabled>明顯刮痕</button><button data-aoi="review" aria-pressed="false" disabled>人工複核</button></div>
+        <div class="scenario-control" id="safeControls" role="group" aria-label="RTSafe 模擬情境" hidden><button data-safe="normal" aria-pressed="true" disabled>正常運轉</button><button data-safe="force" aria-pressed="false" disabled>力量超限</button><button data-safe="heartbeat" aria-pressed="false" disabled>心跳遺失</button></div>
+        <div class="scenario-control" id="retailControls" role="group" aria-label="Retail 模擬情境" hidden><button data-retail="normal" aria-pressed="true" disabled>正常對帳</button><button data-retail="mismatch" aria-pressed="false" disabled>金額不符</button><button data-retail="rerun" aria-pressed="false" disabled>重跑批次</button></div>
+        <div class="scenario-control" id="knowledgeControls" role="group" aria-label="KnowledgeOps 示意情境" hidden><button data-knowledge="cited" aria-pressed="true" disabled>引用通過</button><button data-knowledge="insufficient" aria-pressed="false" disabled>證據不足</button><button data-knowledge="denied" aria-pressed="false" disabled>權限拒絕</button></div>
+        <div class="scenario-control" id="opsControls" role="group" aria-label="OpsFlow 示意情境" hidden><button data-ops="normal" aria-pressed="true" disabled>證據齊全</button><button data-ops="critical" aria-pressed="false" disabled>高風險事件</button><button data-ops="timeout" aria-pressed="false" disabled>工具失敗</button></div>
+        <div class="scenario-control" id="planningControls" role="group" aria-label="Demand Planning 示意情境" hidden><button data-planning="baseline" aria-pressed="true" disabled>基準預測</button><button data-planning="upside" aria-pressed="false" disabled>需求 +25%</button><button data-planning="downside" aria-pressed="false" disabled>需求 −20%</button></div>
+        <div class="scenario-control" id="riskControls" role="group" aria-label="OpenFund 合成持倉情境" hidden><button data-risk="equal" aria-pressed="true" disabled>均分持倉</button><button data-risk="concentrated" aria-pressed="false" disabled>單一集中</button><button data-risk="missing" aria-pressed="false" disabled>資料缺漏</button></div>
+        <div class="scenario-control" id="simopsControls" role="group" aria-label="SimOps 教學情境" hidden><button data-simops="pass" aria-pressed="true" disabled>示意通過</button><button data-simops="fail" aria-pressed="false" disabled>阻抗超限</button><button data-simops="timeout" aria-pressed="false" disabled>工作逾時</button></div>
+        <div class="scenario-control" id="forgeControls" role="group" aria-label="ModelForge 來源版本快照" hidden><button data-forge="nf4" aria-pressed="true" disabled>NF4 已發布</button><button data-forge="q8" aria-pressed="false" disabled>Q8 備援</button><button data-forge="q4" aria-pressed="false" disabled>Q4 阻擋</button></div>
+      </aside>
+      <div class="transition-copy" id="transitionCopy" hidden><span class="overline">DECONSTRUCT. RECONNECT.</span><h2>能力不同。<br><em>證據相連。</em></h2><p id="transitionSubtitle">從看見異常，到安全反應。</p><small>繼續滾動，光點將組成下一座場景。</small></div>
+      <div class="scene-tools" id="sceneTools"><button id="pauseMotion" type="button" aria-pressed="false" disabled>Ⅱ 暫停運作</button><span class="tool-separator"></span><button id="componentButton" type="button" aria-expanded="false" aria-controls="componentNote" disabled>＋ 認識檢測機</button><button id="nextRetailRow" type="button" disabled hidden>下一筆資料 →</button><button id="nextKnowledgeStep" type="button" disabled hidden>下一步流程 →</button><button id="nextOpsStep" type="button" disabled hidden>下一步調查 →</button><button id="nextPlanningDay" type="button" disabled hidden>下一日比較 →</button><button id="nextRiskIssuer" type="button" disabled hidden>下一個持倉 →</button><button id="nextSimopsStep" type="button" disabled hidden>下一個步驟 →</button><button id="nextForgeStep" type="button" disabled hidden>下一段解說 →</button><p id="componentNote" hidden>門架內的相機取得影像，照明讓表面更清楚；程式標出可疑區域，再由規則或人員確認。此處為同步合成示意。</p></div>
+      <div class="stage-footer"><span id="motionStatus">靜態示意 · 載入互動場景</span><span class="scroll-hint">SCROLL TO TRANSFORM <b>↓</b></span><span id="stageNumber">01 / 09 SCENES · 09 PROJECTS</span></div>
+      <div class="journey-progress" aria-hidden="true"><i id="journeyProgress"></i></div>
+    </section>
+  </div>
+  <section class="read-section" id="story">
+    <p class="overline">THE SYSTEM BEHIND THE SCENE</p><h2>AI 與工程實務作品集</h2><p class="collection-intro">整合九項 AI、資料分析與工程應用專案，透過持續運作的 3D 場景與互動監看，呈現各項技術的處理流程、判斷依據與應用限制。</p>
+    <div class="story-grid">
+      <article><span class="story-number">01</span><h3>視覺檢測實務</h3><p>輸送帶、相機與檢測畫面共用同一個工件狀態。切換正常品、刮痕與人工複核，同步改變模型與監看結果。</p><a href="docs/sources/aoi-integration.md">閱讀 AOI 原始測試條件 ↗</a></article>
+      <article><span class="story-number">02</span><h3>即時感測與安全控制實務</h3><p>正常時機械臂持續運作。模擬力量超限或心跳遺失後，機械臂停止，畫面保留原因；選擇正常運轉才會復歸。</p><a href="docs/sources/safe.md">閱讀 RTSafe 設計與限制 ↗</a></article>
+      <article><span class="story-number">03</span><h3>資料整合與對帳實務</h3><p>固定合成批次有 11 筆：7 筆合格、3 筆隔離、1 筆去重。來源與倉儲淨額各 110.0000；試著注入金額差異，或重跑相同批次，觀察發布與新增筆數。</p><a href="docs/sources/data.md">閱讀 Retail 原始能力與限制 ↗</a></article>
+      <article><span class="story-number">04</span><h3>AI 知識管理實務</h3><p>引用通過才交付示意回答；證據不足轉人工；集合未授權時不讀取文件。可逐步查看權限、檢索、驗證與分流。這是原創離線教學腳本，不是模型推論。</p><a href="docs/sources/knowledge.md">閱讀 KnowledgeOps 能力與限制 ↗</a></article>
+      <article><span class="story-number">05</span><h3>營運事件調查實務</h3><p>事件串起唯讀遙測、維護紀錄與 SOP。證據齊全交付摘要；高風險或工具嘗試耗盡轉人工。所有情境外部動作均為 0，不因動畫完成而自動核准。</p><a href="docs/sources/rag.md">閱讀 OpsFlow 能力與限制 ↗</a></article>
+      <article><span class="story-number">06</span><h3>需求預測與情境規劃實務</h3><p>七日原創基準共 700 件；人為上調 25% 得到 875 件，下調 20% 得到 560 件。逐日比較時，立體柱與圖表共用同一數列。倍率是情境假設，不是促銷因果效果。</p><a href="docs/sources/planning.md">閱讀 Demand Planning 能力與限制 ↗</a></article>
+      <article><span class="story-number">07</span><h3>持倉分析與風險觀測實務</h3><p>合成持倉展示均分、集中與缺漏三種資料狀態。四個發行人占比直接對應環形立柱；單一 70% 觸發本頁 60% 教學門檻。資料缺漏時不補值、不輸出集中度結論，也不產生交易。</p><a href="docs/sources/risk.md">閱讀 OpenFund 能力與限制 ↗</a></article>
+      <article><span class="story-number">08</span><h3>電路模擬與流程自動化實務</h3><p>固定六點阻抗樣本比較 50 mΩ 示意門檻：峰值 46 mΩ 為 PASS，110 mΩ 為 FAIL。工作逾時展示最多兩次派工嘗試，沒有結果時不補造曲線。此處未執行 RLC／SPICE、PCB DRC 或實際工作節點。</p><a href="docs/sources/eda.md">閱讀 SimOps 能力與限制 ↗</a></article>
+      <article><span class="story-number">09</span><h3>模型微調、量化與發布實務</h3><p>policy-v2 來源快照：NF4 已發布、Q8 為 previous-good、Q4 被阻擋。Q4 的 event F1 比 Q8 下降 10.73 個百分點，超過 1.5 個百分點上限；檔案較小不代表品質通過。NF4 與 GGUF 生成契約不同，不做同條件推論比較。</p><a href="docs/sources/forge-evaluation.md">閱讀評測與登錄紀錄 ↗</a><a href="docs/sources/forge-evidence.md">核對 run ID 與 artifact hash ↗</a><a href="docs/sources/forge-external.md">閱讀外部泛化限制 ↗</a></article>
+    </div>
+    <p class="truth-note">展示邊界：工件、瑕疵、感測數值與交易批次皆為合成示意，不連接相機、實體設備或資料庫。Retail 使用重新編寫的 11 筆教學資料，對帳以整數分計算；不等同執行原專案 ETL。原專案實測請閱讀證據文件；畫面不呈現虛構準確率。KnowledgeOps 為固定離線腳本，不呼叫模型、不實施正式 ACL；示意文件不是組織政策。OpsFlow 同樣為原創固定腳本，未執行真實工具、重試請求或設備處置。Demand Planning 使用固定七日序列與倍率計算，未在頁面執行訓練、回測、區間估計或補貨最佳化。OpenFund 為原創四發行人合成持倉；不連線公開申報、不執行 ML／DL、PSI 漂移或交易，不提供買賣建議。SimOps 使用原創固定阻抗樣本與逾時腳本，不是原專案求解結果、量測或正式 SI/PI 簽核。ModelForge 的評測值為原專案 policy-v2 本機實測文件快照，不是本頁新測結果；原資料為合成分布，非真實工廠準確率。NF4 的 GGUF 大小未提供，不補零。網頁不訓練、不推論、不改寫 registry，也不以新版外部校準結果覆寫舊契約。模型轉場可反向滾動還原。</p>
+  </section>
+  <section class="collection-section" id="collection">
+    <div class="collection-heading"><div><p class="overline">THE COLLECTION / 09 PROJECTS</p><h2>九種能力。<br>從這裡，繼續深入。</h2></div><p>目前完成 9／9 座 3D 互動場景。<br>八段可逆光點轉場，串起九種能力。<br>每一站都可停留、操作與追查來源。</p></div>
+    <div class="collection-list">
+      <a href="#aoi" data-stop="aoi"><span>01</span><h3>Surface AOI Inspector<small>視覺瑕疵檢測</small></h3><em>3D 場景</em><b>↗</b></a>
+      <a href="#safe" data-stop="safe"><span>02</span><h3>RTSafe Sensor Hub<small>即時安全監督</small></h3><em>3D 場景</em><b>↗</b></a>
+      <a href="#retail" data-stop="retail"><span>03</span><h3>Retail Data Hub<small>資料整理與對帳</small></h3><em>3D 場景</em><b>↗</b></a>
+      <a href="#knowledge" data-stop="knowledge"><span>04</span><h3>KnowledgeOps Studio<small>AI 知識與品質管理</small></h3><em>3D 場景</em><b>↗</b></a>
+      <a href="#ops" data-stop="ops"><span>05</span><h3>OpsFlow Agent<small>營運事件調查</small></h3><em>3D 場景</em><b>↗</b></a>
+      <a href="#planning" data-stop="planning"><span>06</span><h3>Demand Planning Workbench<small>需求預測與情境規劃</small></h3><em>3D 場景</em><b>↗</b></a>
+      <a href="#risk" data-stop="risk"><span>07</span><h3>OpenFund Risk Workbench<small>基金風險分析</small></h3><em>3D 場景</em><b>↗</b></a>
+      <a href="#simops" data-stop="simops"><span>08</span><h3>SimOps Studio<small>電路模擬自動化</small></h3><em>3D 場景</em><b>↗</b></a>
+      <a href="#forge" data-stop="forge"><span>09</span><h3>ModelForge-TW<small>模型微調、量化與發布</small></h3><em>3D 場景</em><b>↗</b></a>
+    </div>
+  </section>
+  <noscript><section class="noscript-note"><h2>目前使用靜態版本</h2><p>JavaScript 未啟用，動畫與情境按鈕不可用；上方專案介紹、原始證據與全部作品連結仍可閱讀。</p><img src="assets/immersive-safe.svg" width="1000" height="600" alt="RTSafe 機械臂、安全控制箱與感測節點的靜態示意"><h3>Retail 資料品質與對帳</h3><img src="assets/immersive-retail.svg" width="1000" height="600" alt="來源資料經過品質閘門，分流至倉儲、隔離與去重區"><p>合成批次共 11 筆，7 合格、3 隔離、1 去重。來源與倉儲淨額均為 110.0000；模擬差額 -1.0000 時阻擋發布；重跑相同資料新增 0 筆。這不是即時資料庫查詢。</p><h3>KnowledgeOps 知識審核</h3><img src="assets/immersive-knowledge.svg" width="1000" height="600" alt="文件庫經權限與證據檢查，分流到引用回答或人工審核"><p>引用通過：附 DEMO-SOP-01 §3 示意來源；證據不足：停止生成，轉人工；權限拒絕：不讀取文件。所有問題、回答及文件文字均為原創固定腳本。</p><h3>OpsFlow 事件調查</h3><img src="assets/immersive-ops.svg" width="1000" height="600" alt="告警塔連接證據牆與調查台，再分流到摘要或人工接手"><p>證據齊全交付摘要，不執行動作；高風險等待人工；工具失敗最多示意嘗試 2 次後轉人工。固定教學腳本，未執行真實工具或核准。</p><h3>Demand Planning 需求規劃</h3><img src="assets/immersive-planning.svg" width="1000" height="600" alt="模型候選櫃、七日需求柱與情境倍率轉盤"><p>原創固定七日基準 [80,100,120,100,80,120,100]，合計 700 件。上調 25% 共 875 件，下調 20% 共 560 件。情境是人為假設，沒有訓練、回測或因果估計，不建立訂單。</p><h3>OpenFund 持倉風險觀測</h3><img src="assets/immersive-risk.svg" width="1000" height="600" alt="環形持倉柱、旋轉觀測臂與品質閘門"><p>原創合成持倉：均分 [25,25,25,25]%，集中 [70,10,10,10]%，缺漏 [40,30,20,未知]%。缺漏情境僅涵蓋 90%，不補值、不下集中度結論。60% 僅為本頁教學門檻；不是原專案評測或投資建議。</p><h3>SimOps 電路模擬自動化</h3><img src="assets/immersive-simops.svg" width="1000" height="600" alt="雙工作節點、電路板、探針與結果台"><p>固定頻率 [0.1,0.3,1,3,10,30] MHz。示意通過樣本 [42,28,18,24,37,46] mΩ，超限樣本 [55,36,20,44,82,110] mΩ，門檻 50 mΩ。逾時沒有有效曲線；最多兩次示意嘗試後交由人員處理。未執行求解器或真實派工。</p><h3>ModelForge 模型治理</h3><img src="assets/immersive-forge.svg" width="1000" height="600" alt="運算櫃、旋轉權重核心與三個登錄出口"><p>policy-v2 來源實測快照，224 筆：NF4 event F1 86.24%、severity F1 95.35%，已發布；Q8 為 85.16%、85.34%，回復備援；Q4 為 74.43%、91.04%，阻擋發布。Q8／Q4 檔案大小分別 1,834,426,144／1,107,408,672 bytes，NF4 無可比 GGUF 大小。Q8→Q4 event F1 下降 10.73 個百分點，超過 1.5 上限。不同 NF4／GGUF 生成契約僅作描述；不代表真實工廠準確率，不在網頁訓練、推論或發布。</p></section></noscript>
+</main>
+<footer><span>2026_8月合輯</span><span>AI 與工程實務作品集</span><a href="showcase.html">舊版完整敘事 ↗</a><a href="index.html">進入工作台 ↗</a></footer>
+<dialog id="monitorDialog" aria-labelledby="dialogTitle"><header><div><p class="overline">SIMULATED OBSERVATION</p><h2 id="dialogTitle">檢測畫面</h2></div><button id="closeMonitor" type="button" aria-label="關閉放大畫面">×</button></header><div id="enlargedFeed"></div><p id="dialogResult"></p><p class="dialog-boundary">ModelForge 顯示原專案 policy-v2 本機評測文件快照，動畫只作解說；不執行訓練、推論或發布，非真實工廠準確率。其餘為與 3D 場景同步的合成示意，不是真實攝影機影像、模型推論、硬體量測或資料庫查詢。KnowledgeOps 的問題、回答、引用與流程均為原創教學腳本，畫面呈現整體結果及循環步驟。OpsFlow 為事件調查腳本，畫面呈現情境結局及循環步驟，不是實際工具執行；所有情境外部動作為 0。Demand Planning 比較固定七日示意序列與人為倍率，不執行模型訓練、回測或建立訂單。OpenFund 為四發行人固定合成持倉，平方和是占比平方總和，不是 ML 風險機率；缺漏停止結論，不產生交易或買賣建議。SimOps 曲線是原創固定樣本，不執行求解器或量測；逾時的重試是離線脚本，外部派工為 0，不代表正式 SI/PI 簽核。Retail 筆數為固定批次摘要；下方逐筆動畫是同一批資料的循環解說，不累加入帳。</p></dialog>
+<p id="announcement" class="sr-only" aria-live="polite"></p>
+<script type="module" src="experience.js"></script>
+</body></html>

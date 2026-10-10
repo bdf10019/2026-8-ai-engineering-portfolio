@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+<title id="title">Retail Data Hub 資料品質與對帳站</title><desc id="desc">CSV、SQL、JSONL 經品質閘門分流。11 筆資料中 7 合格、3 隔離、1 去重，來源與倉儲淨額 110.0000。合成示意，不連接資料庫。</desc>
+<rect width="1000" height="600" rx="24" fill="#e7ebef"/>
+<path d="M65 430 470 560 948 380 550 280Z" fill="#839ca2"/><path d="M65 430v18l405 132v-20Z" fill="#29424b"/>
+<g stroke="#527888" stroke-width="12" fill="none" stroke-linejoin="round"><path d="M250 247 454 321 734 216"/><path d="M234 362 454 321"/><path d="M454 321 686 437"/></g>
+<g fill="#dae1dc" stroke="#637f86" stroke-width="3"><path d="M115 185 215 151 279 174v155l-99 35-65-24Z"/><path d="M137 329 230 297 288 319v111l-96 35-55-23Z"/></g>
+<g fill="#2a4850"><path d="M115 185 180 206 279 174 215 151Z"/><path d="M137 329 192 350 288 319 230 297Z"/></g>
+<g font-family="monospace" font-size="22" fill="#294650"><text x="143" y="254">CSV / SQL</text><text x="161" y="397">JSONL</text></g>
+<g fill="#c0d4d8" stroke="#456872" stroke-width="4"><path d="M381 234 415 244v150l-34-11Z"/><path d="M521 186 555 199v150l-34-12Z"/><path d="M364 212 520 157 572 179 411 236Z"/><path d="M364 212v25l47 24 161-58v-24l-161 57Z"/></g>
+<path d="M410 261 521 221v112l-111 38Z" fill="#88d5c5" opacity=".45"/>
+<text x="355" y="151" font-family="monospace" font-size="23" fill="#365762">QUALITY GATE</text>
+<g fill="#cfddd8" stroke="#41646b" stroke-width="3"><path d="M697 183v154c0 24 145 24 145 0V183Z"/><ellipse cx="769.5" cy="183" rx="72.5" ry="25"/><path d="M697 220c0 25 145 25 145 0M697 259c0 25 145 25 145 0M697 298c0 25 145 25 145 0" fill="none" stroke="#79bbae" stroke-width="8"/></g>
+<text x="695" y="139" font-family="monospace" font-size="22" fill="#365762">WAREHOUSE</text>
+<path d="M615 421 723 383 786 407 676 446Z" fill="#e6aa7c"/><path d="M615 421v32l61 25 110-38v-33l-110 39Z" fill="#c9855a"/>
+<text x="613" y="514" font-family="monospace" font-size="20" fill="#7a563f">QUARANTINE</text>
+<ellipse cx="458" cy="434" rx="52" ry="18" fill="none" stroke="#a69bc1" stroke-width="9"/><text x="400" y="494" font-family="monospace" font-size="19" fill="#74618e">DEDUPE</text>
+<g font-family="Arial,Microsoft JhengHei,sans-serif" fill="#293e4f"><text x="50" y="55" font-size="26">03 / RETAIL DATA HUB</text><text x="50" y="87" font-size="18">11 筆輸入 · 7 合格 · 3 隔離 · 1 去重 ｜ 合成資料示意</text></g>
+</svg>

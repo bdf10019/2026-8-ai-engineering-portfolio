@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+ <title id="title">需求規劃台：七日基準與情境比較</title>
+ <desc id="desc">左側為模型候選櫃，中間七組需求柱，右側情境倍率轉盤。基準合計 700 件，上調 25% 為 875 件，下調 20% 為 560 件；皆為固定示意資料。</desc>
+ <rect width="960" height="600" rx="28" fill="#e2edf0"/>
+ <text x="54" y="66" fill="#355c71" font-family="sans-serif" font-size="17" letter-spacing="4">06 / DEMAND PLANNING</text>
+ <text x="54" y="115" fill="#223b4c" font-family="sans-serif" font-size="34">把明天的需求，先放上桌。</text>
+ <path d="M80 410 665 324 899 424 316 515Z" fill="#afc4cc"/>
+ <path d="M80 410v24l236 105v-24zm236 105 583-91v24l-583 91Z" fill="#708b9b"/>
+ <g fill="#355365" stroke="#e2edf0" stroke-width="3">
+  <path d="M119 273h30v141h-30zM158 257h30v149h-30zM197 242h30v154h-30zM236 226h30v160h-30z"/>
+ </g>
+ <g fill="#91dbc3"><circle cx="134" cy="291" r="5"/><circle cx="173" cy="275" r="5"/><circle cx="212" cy="260" r="5"/><circle cx="251" cy="244" r="5"/></g>
+ <g fill="#64899b"><path d="M312 326h20v119h-20zM365 290h20v148h-20zM418 254h20v177h-20zM471 276h20v148h-20zM524 298h20v119h-20zM577 233h20v177h-20zM630 255h20v148h-20z"/></g>
+ <g fill="#91dbc3" stroke="#4e857e" stroke-width="2"><path d="M335 335h20v119h-20zM388 299h20v148h-20zM441 263h20v177h-20zM494 285h20v148h-20zM547 307h20v119h-20zM600 242h20v177h-20zM653 264h20v148h-20z"/></g>
+ <g fill="none" stroke="#edf7f7" stroke-width="9"><path d="M314 317V203l362-55v233"/></g>
+ <circle cx="785" cy="362" r="54" fill="#355365" stroke="#8eaeba" stroke-width="9"/>
+ <path d="M785 362v-40" stroke="#e9b86b" stroke-width="8" stroke-linecap="round"/>
+ <circle cx="785" cy="362" r="9" fill="#e9b86b"/>
+ <g font-family="sans-serif" fill="#223b4c"><text x="720" y="450" font-size="16">WHAT IF × 1.00</text><text x="54" y="564" font-size="17">7 日基準 700 件 · 固定示意序列，未執行模型回測或補貨最佳化。</text></g>
+</svg>

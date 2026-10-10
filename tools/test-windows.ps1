@@ -38,12 +38,12 @@ try {
  $session=Start-Launcher;$url=$session.Info.url;$port=([Uri]$url).Port
  Assert-Check ((Get-ChildItem -LiteralPath $portableDir -File).Count -eq 1) 'Runs from a directory containing only the EXE'
  $health=Invoke-RestMethod -Uri ($url+'__axis/health')
- Assert-Check ($health.app -eq 'AXIS09' -and $health.version -eq '1.1.0') 'Embedded HTTP server becomes ready'
+ Assert-Check ($health.app -eq 'AXIS09' -and $health.version -eq '1.2.0') 'Embedded HTTP server becomes ready'
  $html=Invoke-WebRequest -Uri $url -UseBasicParsing
- Assert-Check ($html.Content -match 'AXIS-09' -and $html.Content -match 'showcase.js') 'Default entry serves the actual portfolio'
- $js=Invoke-WebRequest -Uri ($url+'showcase.js') -UseBasicParsing
- Assert-Check ($js.Content -match 'compact-motion') 'Narrow-window scroll fix is inside the executable'
- foreach($relative in @('showcase.css','assets/vendor/three.module.min.js','assets/scenes/axis-scene-01.png','assets/axis-09.glb','docs/showcase-evidence.md','output/pdf/2026_8月合輯_作品手冊.pdf')) {
+ Assert-Check ($html.Content -match 'AI 與工程' -and $html.Content -match 'experience.js' -and $html.Content -match 'startAutoTour') 'Default entry serves the latest guided portfolio'
+ $css=Invoke-WebRequest -Uri ($url+'experience.css') -UseBasicParsing
+ Assert-Check ($css.Content -match '#ff6b6b' -and $css.Content -match 'tourControlsBreath') 'Latest red guided-tour control is inside the executable'
+ foreach($relative in @('experience.css','experience.js','experience-tour.js','assets/vendor/three.module.min.js','assets/axis-09.glb','docs/AUTOPLAY-TOUR.md')) {
   $response=Invoke-WebRequest -Uri ($url+$relative) -UseBasicParsing
   Assert-Check ($response.StatusCode -eq 200) ('Embedded asset: '+$relative)
  }

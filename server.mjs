@@ -22,7 +22,7 @@ const types = {
 createServer(async (request, response) => {
   try {
     const url = new URL(request.url, `http://${request.headers.host}`);
-    const requested = decodeURIComponent(url.pathname === "/" ? "/showcase.html" : url.pathname);
+    const requested = decodeURIComponent(url.pathname === "/" ? "/experience.html" : url.pathname);
     const safePath = normalize(requested).replace(/^(\.\.[/\\])+/, "");
     const filePath = join(root, safePath);
     const info = await stat(filePath);

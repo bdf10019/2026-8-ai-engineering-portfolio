@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+<title>RTSafe 安全控制站靜態示意</title>
+<ellipse cx="500" cy="482" rx="310" ry="45" fill="#9fcbbd" opacity=".06"/><path d="m188 369 407-110 220 133-407 116Z" fill="#65897b"/><path d="M188 369v27l220 133v-21Zm220 139 407-116v27L408 529Z" fill="#335f52"/><path d="m237 364 342-87 181 113-342 99Z" fill="none" stroke="#dc9b61" stroke-width="4"/>
+<ellipse cx="456" cy="397" rx="78" ry="30" fill="#263e35"/><path d="M401 395v-41h110v41" fill="#acc4b2"/><ellipse cx="456" cy="354" rx="55" ry="23" fill="#cedaca"/>
+<path d="m430 349-26-151 52-9 28 151Z" fill="#c7d8c4"/><path d="m405 209 39-15 143 89-32 36Z" fill="#9fbda6"/><path d="m555 319 32-36 53 17-12 46Z" fill="#d6dfc9"/>
+<circle cx="433" cy="207" r="32" fill="#263e35"/><circle cx="433" cy="207" r="20" fill="#d48b58"/><circle cx="572" cy="297" r="27" fill="#263e35"/><circle cx="572" cy="297" r="16" fill="#d48b58"/>
+<path d="m620 334 4 32 22 6 7-24m-30 17-19 6-8-27" fill="none" stroke="#c7d8c4" stroke-width="10"/>
+<path d="m570 405 60-15 59 32-60 18v-58m-59 23v-49l60-15 59 32v49" fill="#9bb8a4"/><path d="m570 356 60-15 59 32-60 18Z" fill="#294b3e"/>
+<rect x="684" y="240" width="89" height="143" rx="3" fill="#bad0bb"/><rect x="695" y="260" width="67" height="45" fill="#183b30"/><path d="m704 285 10-10 10 16 11-12 16 2" fill="none" stroke="#9ee8c8" stroke-width="3"/><circle cx="744" cy="328" r="9" fill="#e68e55"/>
+<path d="M260 355V195m479 169V204" stroke="#cfddc6" stroke-width="14"/><path d="m260 225 479 9m-479 28 479 9m-479 28 479 9" stroke="#9ee8c8" opacity=".3" stroke-dasharray="7 9"/>
+<text x="198" y="565" font-family="monospace" font-size="13" letter-spacing="3" fill="#9cbbac">02 / RTSAFE SENSOR HUB · STATIC FALLBACK</text>
+</svg>

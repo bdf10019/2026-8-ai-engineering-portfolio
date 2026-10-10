@@ -41,7 +41,7 @@
 ## 視覺、來源與授權
 
 - 遵循本專案 `scroll-effect-website`：同一主體連接章節、原生可逆滾動、明暗節奏、狀態切換同時更新主體和證據。
-- 原參考觀察記錄見 `C:/chatgpt_work/skill/scroll-effect-website/references/aevion-pattern-language.md`；只借用互動語法，未使用 Riotters／Aevion 品牌、圖片、模型或文案。
+- 原參考觀察記錄保留於作者本機的設計筆記（未收入本倉庫）；只借用互動語法，未使用 Riotters／Aevion 品牌、圖片、模型或文案。
 - 初始 AXIS-09 ImageGen 概念圖保留於 `assets/axis-09-concept-v1.png`。實作模型與靜態圖是程式建立的幾何視覺抽象，不宣稱等同原概念圖的高精細工業建模。
 - Three.js 固定為 0.180.0，本地載入，MIT 授權保留於 `assets/vendor/THREE-LICENSE.txt`。GLTFExporter 唯一套件修改是將裸模組 import 改成本地 vendor 路徑。
 - 字體使用裝置提供的 Arial／Microsoft JhengHei／PingFang TC 與 Cascadia Code／Consolas 系統回退；不散布商業字體檔。

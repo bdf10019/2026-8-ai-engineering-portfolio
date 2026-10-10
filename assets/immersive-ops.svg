@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+<title id="title">OpsFlow 事件調查台的靜態示意</title>
+<desc id="desc">告警塔連接遙測、維護及 SOP 證據牆，經調查圓台分流至摘要或人工審核。固定離線腳本，不執行外部動作。</desc>
+<rect width="1000" height="600" fill="#eee9df"/>
+<g stroke="#675b47" stroke-width="3" stroke-linejoin="round">
+<path d="M72 410L516 268 934 410 482 563Z" fill="#ac946e"/><path d="M72 410v25l410 152 452-151v-26L482 563Z" fill="#30434b"/>
+<path d="M170 233l74-20 42 22v197l-78 27-38-26Z" fill="#b6c7bc"/><path d="M208 259l78-24v197l-78 27Z" fill="#d7dfcf"/>
+<path d="M186 217v-29l66-19 20 13v34l-65 19Z" fill="#e7b76c"/>
+<path d="M214 291l48-15v53l-48 17Z" fill="#30434b"/>
+<path d="M362 202V399M516 173V367M670 202V402" stroke-width="10"/>
+<path d="M310 163l112-32v150l-112 30Z" fill="#30434b"/><path d="M459 126l112-27v150l-112 31Z" fill="#30434b"/><path d="M610 160l112 34v150l-112-34Z" fill="#30434b"/>
+<path d="M329 257v-31m21 27v-51m23 46v-73m24 66v-39" stroke="#91dbc3" stroke-width="10"/>
+<path d="M478 154l73-18m-73 42l73-18m-73 42l73-18m77 7l72 22m-72 2l72 22m-72 2l72 22" stroke="#e7b76c" stroke-width="5"/>
+<path d="M280 400l235 29 222-33m-221 34l214 91" fill="none" stroke="#d39740" stroke-width="8"/>
+<ellipse cx="512" cy="423" rx="103" ry="44" fill="#30434b"/><ellipse cx="512" cy="405" rx="103" ry="43" fill="#d4bd94"/>
+<path d="M451 407l80-28 39 44-119-16Z" fill="none" stroke="#30434b"/>
+<circle cx="451" cy="407" r="10" fill="#91dbc3"/><circle cx="531" cy="379" r="10" fill="#91dbc3"/><circle cx="570" cy="423" r="10" fill="#e7b76c"/>
+<path d="M743 359l75-28 59 23-78 28v68l-56-22Z" fill="#b6c7bc"/><path d="M755 349l67-22 42 17-67 23Z" fill="#f1eadb"/>
+<path d="M652 457l95-31 90 29-97 36Z" fill="#30434b"/><path d="M679 467v62m127-60v62" fill="none"/>
+<path d="M713 389l71 20v54l-71-20Z" fill="#e7b76c"/><path d="M656 493v-54l62 18" fill="none" stroke="#af7737" stroke-width="10"/>
+</g>
+<g font-family="Arial,sans-serif" fill="#4b3d2c"><text x="55" y="64" font-size="16" letter-spacing="3">05 / OPSFLOW AGENT</text><text x="55" y="106" font-size="30">從事件，到證據，再到人工接手。</text><text x="55" y="578" font-size="13">原創固定腳本 · 無真實工具呼叫 · 所有情境外部動作 0</text></g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+<title id="title">KnowledgeOps 知識審核台</title><desc id="desc">文件先通過權限與引用檢查。有依據時輸出回答，證據不足轉人工，無權限不讀取文件。原創離線示意。</desc>
+<rect width="1000" height="600" rx="24" fill="#eae7ef"/><path d="M80 400 474 547 930 385 534 260Z" fill="#b6b0c2"/><path d="M80 400v20l394 150v-23Z" fill="#655e82"/>
+<g fill="none" stroke-width="10"><path d="M238 331 483 361 727 261" stroke="#97caba"/><path d="M483 361 737 438" stroke="#dba67c"/></g>
+<g fill="#cec9df" stroke="#655e82" stroke-width="4"><ellipse cx="245" cy="365" rx="115" ry="35"/><ellipse cx="245" cy="262" rx="115" ry="35"/><path d="M245 177v184" stroke-width="12"/></g>
+<g fill="#9682ac" stroke="#e8e4ee" stroke-width="5"><path d="M151 191v59l26 9v-62ZM198 180v59l26 9v-62ZM260 175v59l26 9v-62ZM306 190v59l26 9v-62Z"/><path d="M151 295v59l26 9v-62ZM198 284v59l26 9v-62ZM260 279v59l26 9v-62ZM306 294v59l26 9v-62Z"/></g>
+<path d="M377 242v143M415 225v144M368 239l57-21" stroke="#655e82" stroke-width="10"/>
+<path d="M446 217 493 182 543 201 557 354 496 388 433 358Z" fill="#b7a1d9" fill-opacity=".4" stroke="#7d6d95" stroke-width="3"/>
+<g fill="none" stroke="#ac92ce" stroke-width="7"><ellipse cx="495" cy="244" rx="54" ry="17"/><ellipse cx="495" cy="292" rx="58" ry="18"/><ellipse cx="495" cy="338" rx="61" ry="20"/></g>
+<path d="M688 253v102h67V237" fill="#c9cfca"/><path d="M641 252 723 221 809 253 726 284Z" fill="#655e82"/><path d="M660 249 722 230 727 267 785 250 733 230 727 267Z" fill="#f9f5e9"/>
+<path d="M649 418 730 385 821 419 739 451Z" fill="#f0e9db"/><path d="M668 433v53M800 434v35" stroke="#655e82" stroke-width="9"/><path d="M712 360v54l56 20v-54Z" fill="#655e82"/><path d="M720 373v33l40 14v-32Z" fill="#dba67c"/>
+<g font-family="Arial,Microsoft JhengHei,sans-serif" fill="#504261"><text x="50" y="57" font-size="26">04 / KNOWLEDGEOPS STUDIO</text><text x="50" y="90" font-size="18">文件 → 權限 → 證據 → 引用回答 / 人工審核</text><text x="162" y="420" font-size="20">文件庫</text><text x="365" y="200" font-size="19">ACL</text><text x="457" y="161" font-size="20">證據核心</text><text x="685" y="212" font-size="20">引用回答</text><text x="711" y="513" font-size="20">人工審核</text><text x="50" y="570" font-size="15">原創離線教學腳本；不讀取私人文件、不呼叫模型。</text></g>
+</svg>

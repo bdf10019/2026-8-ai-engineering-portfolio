@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+<title id="title">ModelForge-TW 模型治理台</title><desc id="desc">左側運算櫃，中央權重核心，右側已發布、備援、阻擋三個版本出口。原創靜態示意，不是實際訓練。</desc>
+<rect width="1000" height="600" fill="#e5e8f1"/><ellipse cx="500" cy="475" rx="410" ry="65" fill="#343e5b" opacity=".13"/>
+<path d="M80 392L480 245 936 388 555 547Z" fill="#69799e"/>
+<g stroke="#343e5b" stroke-width="4" stroke-linejoin="round">
+<path d="M141 208L224 181 300 211 214 241Z" fill="#b8c6e5"/><path d="M141 208V406L214 437V241Z" fill="#69799e"/><path d="M214 241L300 211V409L214 437Z" fill="#343e5b"/>
+<g stroke="#b8c6e5" stroke-width="11"><path d="M231 267L282 249M231 300L282 282M231 333L282 315M231 366L282 348"/></g>
+<path d="M355 376L457 331 577 377 476 424Z" fill="#343e5b"/>
+<path d="M365 338L457 298 565 338 475 379Z M365 294L457 254 565 294 475 335Z M365 250L457 210 565 250 475 291Z M365 206L457 166 565 206 475 247Z" fill="#988ec7"/>
+<path d="M420 151L463 132 507 151 464 172Z" fill="#91dbc3"/>
+</g>
+<g fill="none" stroke="#a2add1" stroke-width="3"><ellipse cx="462" cy="294" rx="149" ry="48"/><path d="M311 410L478 475 664 410"/></g>
+<g fill="#91dbc3"><circle cx="314" cy="294" r="8"/><circle cx="612" cy="294" r="8"/><circle cx="462" cy="343" r="8"/></g>
+<g font-family="Arial,sans-serif" font-size="12" text-anchor="middle">
+<g transform="translate(645 270)"><path d="M-39 0H39V151H-39Z" fill="#69799e"/><rect x="-28" y="16" width="56" height="16" fill="#91dbc3"/><text y="66" fill="#fff">RELEASED</text><text y="172" fill="#343e5b">NF4</text></g>
+<g transform="translate(741 299)"><path d="M-39 0H39V151H-39Z" fill="#69799e"/><rect x="-28" y="16" width="56" height="16" fill="#9fc9ed"/><text y="66" fill="#fff">PREVIOUS</text><text y="172" fill="#343e5b">Q8</text></g>
+<g transform="translate(837 328)"><path d="M-39 0H39V151H-39Z" fill="#69799e"/><rect x="-28" y="16" width="56" height="16" fill="#f2a278"/><text y="66" fill="#fff">BLOCKED</text><text y="172" fill="#343e5b">Q4</text></g>
+</g>
+<text x="65" y="65" font-family="Arial,sans-serif" font-size="20" fill="#343e5b">MODEL GOVERNANCE / POLICY-V2 SNAPSHOT</text>
+<text x="65" y="568" font-family="Arial,Microsoft JhengHei,sans-serif" font-size="16" fill="#707d96">原創示意 · 不執行訓練、推論或發布 · 評測與登錄來源見文件</text>
+</svg>

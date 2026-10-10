@@ -9,7 +9,7 @@ $outDirectory=if([IO.Path]::IsPathRooted($OutputDirectory)){$OutputDirectory}els
 New-Item -ItemType Directory -Force -Path $buildDirectory,$outDirectory | Out-Null
 $zipPath=Join-Path $buildDirectory ('website-'+[Guid]::NewGuid().ToString('N')+'.zip')
 $paths=New-Object 'System.Collections.Generic.List[string]'
-foreach($file in @('showcase.html','showcase.css','showcase.js','showcase-data.js','axis-model.js','axis-renderer.js','storyboard.html','storyboard.css','index.html','styles.css','app.js','engine.js','sw.js','manifest.webmanifest','icon-192.png','icon-512.png','og.png','output/pdf/2026_8月合輯_作品手冊.pdf')) {
+foreach($file in @('experience.html','experience.css','experience.js','experience-tour.js','experience-state.js','experience-models.js','showcase.html','showcase.css','showcase.js','showcase-data.js','axis-model.js','axis-renderer.js','storyboard.html','storyboard.css','index.html','styles.css','app.js','engine.js','sw.js','manifest.webmanifest','icon-192.png','icon-512.png','og.png','output/pdf/2026_8月合輯_作品手冊.pdf')) {
  if(-not (Test-Path -LiteralPath (Join-Path $projectRoot $file) -PathType Leaf)){throw "Missing website asset: $file"}
  $paths.Add($file)
 }
@@ -41,4 +41,3 @@ if($LASTEXITCODE -ne 0){throw 'C# compilation failed.'}
 $sha=(Get-FileHash -LiteralPath $exe -Algorithm SHA256).Hash.ToLowerInvariant()
 [IO.File]::WriteAllText((Join-Path $outDirectory 'SHA256SUMS.txt'),$sha+'  '+[IO.Path]::GetFileName($exe)+[Environment]::NewLine,[Text.UTF8Encoding]::new($false))
 [PSCustomObject]@{Executable=$exe;Bytes=(Get-Item -LiteralPath $exe).Length;SHA256=$sha;EmbeddedAssets=$paths.Count}
-

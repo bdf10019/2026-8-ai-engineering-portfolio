@@ -13,12 +13,12 @@ using System.Windows.Forms;
 
 [assembly: AssemblyTitle("2026_8月合輯 — AXIS-09")]
 [assembly: AssemblyDescription("Single-file offline engineering portfolio launcher")]
-[assembly: AssemblyVersion("1.1.0.0")]
-[assembly: AssemblyFileVersion("1.1.0.0")]
+[assembly: AssemblyVersion("1.2.0.0")]
+[assembly: AssemblyFileVersion("1.2.0.0")]
 
 namespace Axis09 {
  internal static class Program {
-  internal const string Version="1.1.0";
+  internal const string Version="1.2.0";
   private const string MutexName=@"Local\AXIS09.Collection.Launcher.v1";
   private const string OpenEventName=@"Local\AXIS09.Collection.Open.v1";
   [STAThread] private static int Main(string[] args) {
@@ -108,7 +108,7 @@ namespace Axis09 {
      }
     }
    }
-   if(!files.ContainsKey("showcase.html"))throw new InvalidDataException("Missing website entry.");
+   if(!files.ContainsKey("experience.html"))throw new InvalidDataException("Missing website entry.");
   }
   internal void Start() {
    listener=new TcpListener(IPAddress.Loopback,18409);
@@ -148,7 +148,7 @@ namespace Axis09 {
     try{path=Uri.UnescapeDataString(request[1].Split('?')[0]);}catch(UriFormatException){Reply(stream,400,"text/plain",new byte[0],head,null);return;}
     if(path.IndexOf('\\')>=0||path.IndexOf('\0')>=0||Array.IndexOf(path.Split('/'),"..")>=0){Reply(stream,404,"text/plain",new byte[0],head,null);return;}
     if(path=="/__axis/health"){Reply(stream,200,"application/json; charset=utf-8",Encoding.UTF8.GetBytes("{\"app\":\"AXIS09\",\"version\":\""+Program.Version+"\",\"port\":"+port+"}"),head,null);return;}
-    string name=path=="/"?"showcase.html":path.TrimStart('/');
+    string name=path=="/"?"experience.html":path.TrimStart('/');
     byte[] body;
     if(!files.TryGetValue(name,out body)){Reply(stream,404,"text/plain; charset=utf-8",Encoding.UTF8.GetBytes("找不到頁面"),head,null);return;}
     if(range!=null&&!head) {

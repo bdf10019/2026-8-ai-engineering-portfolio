@@ -63,7 +63,7 @@
 需求：Node.js 20 或更新版本。
 
 ```powershell
-cd C:\chatgpt_work\2026_8月合輯
+cd path\to\2026-8-ai-engineering-portfolio
 npm start
 ```
 

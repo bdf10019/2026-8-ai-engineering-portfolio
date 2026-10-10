@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+<title id="title">OpenFund 持倉風險觀測台</title><desc id="desc">申報檔案塔、四座持倉柱、觀測臂與報告品質閘門。原創合成資料，不提供買賣建議。</desc>
+<rect width="1000" height="600" rx="28" fill="#e8e5ef"/>
+<g font-family="sans-serif" fill="#4b425d"><text x="50" y="62" font-size="17" letter-spacing="3">07 / OPENFUND RISK</text><text x="50" y="110" font-size="34">看見集中，也看見未知。</text></g>
+<path d="M62 409 647 320 935 421 350 534Z" fill="#c6bfd6"/><path d="M62 409v22l288 125v-22zm288 125 585-113v23L350 556Z" fill="#6d637f"/>
+<g fill="#716884" stroke="#e8e5ef" stroke-width="3"><path d="M129 236h95v198h-95z"/><path d="M140 256h72v22h-72zm0 34h72v22h-72zm0 34h72v22h-72zm0 34h72v22h-72z" fill="#dcd7e5"/></g>
+<ellipse cx="493" cy="404" rx="186" ry="68" fill="#766a8c"/><ellipse cx="493" cy="392" rx="177" ry="60" fill="#d6cfe2"/>
+<g fill="#a69bbf" stroke="#7b6e92" stroke-width="3"><path d="M370 295h45v103h-45zM477 253h45v103h-45zM582 306h45v103h-45zM477 353h45v103h-45z"/></g>
+<path d="M493 380V209l118 36" fill="none" stroke="#667d7d" stroke-width="13"/><rect x="596" y="235" width="34" height="21" rx="4" fill="#91dbc3"/>
+<path d="M734 404V303h106v101" fill="none" stroke="#6a5e80" stroke-width="10"/><path d="M741 343v-67" stroke="#e9b86b" stroke-width="9"/>
+<path d="M714 430 802 401 879 427 790 458Z" fill="#766a8c"/><path d="m753 424 43-14 38 13-43 16Z" fill="#f4f0e5"/>
+<g font-family="sans-serif" fill="#4b425d"><text x="119" y="220" font-size="15">FILINGS</text><text x="734" y="477" font-size="14">RESEARCH ONLY</text><text x="50" y="582" font-size="16">固定合成持倉 · 資料缺漏停止結論 · 非模型分數／非投資建議</text></g>
+</svg>

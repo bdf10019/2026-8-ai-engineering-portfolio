@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+<title id="title">SimOps 電路模擬工作台</title><desc id="desc">雙工作節點、原創電路板與探針、結果報告台。固定教學樣本，未執行求解器或量測。</desc>
+<rect width="1000" height="600" rx="28" fill="#e2eee8"/>
+<g font-family="sans-serif" fill="#294c48"><text x="50" y="62" font-size="17" letter-spacing="3">08 / SIMOPS STUDIO</text><text x="50" y="110" font-size="34">讓每一次模擬，都有跡可循。</text></g>
+<path d="M62 409 647 320 935 421 350 534Z" fill="#bcd3c8"/><path d="M62 409v22l288 125v-22zm288 125 585-113v23L350 556Z" fill="#496b62"/>
+<g fill="#447a78" stroke="#dce9df" stroke-width="3"><path d="M124 244h61v185h-61zM203 226h61v185h-61z"/><path d="M135 267h39v23h-39zm0 39h39v23h-39zm0 39h39v23h-39zM214 249h39v23h-39zm0 39h39v23h-39zm0 39h39v23h-39z" fill="#233a36"/></g>
+<path d="M310 379 526 300 710 387 493 485Z" fill="#447a78" stroke="#294c48" stroke-width="6"/>
+<g fill="none" stroke="#d4a66a" stroke-width="4"><path d="m334 381 90-32 96 45-98 47M404 453l74-29-49-26 112-45M580 341l-53 32 100 45-70 30"/><path d="m491 336 47 23"/></g>
+<path d="m449 382 68-26 53 24-68 28Z" fill="#172f2b"/>
+<g fill="#dce9df" stroke="#839a90" stroke-width="3"><ellipse cx="374" cy="372" rx="18" ry="9"/><path d="M356 346v26q18 15 36 0v-26Z"/><ellipse cx="374" cy="346" rx="18" ry="9"/><path d="M559 355v25q18 15 36 0v-25Z"/><ellipse cx="577" cy="355" rx="18" ry="9"/></g>
+<path d="M330 372V251l265-83v174" fill="none" stroke="#748d85" stroke-width="9"/>
+<path d="M478 202v113" stroke="#c1d7cb" stroke-width="10"/><path d="M478 310v22" stroke="#d4a66a" stroke-width="5"/>
+<path d="M768 295h111v119H768Z" fill="#447a78"/><path d="M780 310h87v71h-87Z" fill="#172f2b"/>
+<path d="m791 347 19 10 21-22 28 7" fill="none" stroke="#91dbc3" stroke-width="4"/>
+<path d="M744 429 812 403 895 430 825 458Z" fill="#668b7d"/><path d="m785 427 28-10 37 12-30 12Z" fill="#f5efdc"/>
+<text x="50" y="581" font-family="sans-serif" fill="#496b62" font-size="16">固定教學曲線 · 非 RLC／SPICE 求解或量測 · 非正式 SI/PI 簽核</text>
+</svg>
